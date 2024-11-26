@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.text-banner {
+  position: absolute; /* Positioned relative to Frame5.svg */
+  top: 17%; /* Position near the bottom of the frame */
+  left: 47%; /* Center horizontally */
+  transform: translate(-50%, -40%); /* Center precisely */
+  font-family: var(--font-almarai), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+
+  /* Ensure the text stays on one line */
+  white-space: nowrap; /* Prevent wrapping */
+  
+
+  /* Responsive width */
+  width: calc(100% - 50px); /* Ensure it fits within the frame */
+  max-width: 50000px; /* Limit the max width */
+  
+  /* Responsive font size */
+  font-size: clamp(2px, 3.5vw, 64px); /* Min 12px, preferred 2% of viewport, max 18px */
+ 
+  
+  
+}
+.text-lang {
+  position: absolute; /* Positioned relative to Frame5.svg */
+  top: 45%; /* Position near the bottom of the frame */
+  left: 67%; /* Center horizontally */
+  transform: translate(-50%, -40%); /* Center precisely */
+  font-family: var(--font-almarai), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: hwb(0 0% 100%);
+
+  
+  
+
+  /* Responsive width */
+  width: calc(100% - 50px); /* Ensure it fits within the frame */
+  max-width: 50000px; /* Limit the max width */
+  
+  /* Responsive font size */
+  font-size: clamp(2px, 3.5vw, 64px); /* Min 12px, preferred 2% of viewport, max 18px */
+ 
+  
+  
+}
+
