@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import DropdownMenu from "./DropdownMenu"; // Import the DropdownMenu component
 
 export default function Home() {
   const frameRef = useRef<HTMLImageElement>(null);
-  const arrowRef = useRef<HTMLImageElement>(null);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isMirrored, setIsMirrored] = useState(false);
 
