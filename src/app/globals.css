@@ -49,6 +49,7 @@
   font-weight: 400;
   text-align: center;
   color: hwb(0 0% 100%);
+  
 
   
   
@@ -63,4 +64,51 @@
   
   
 }
+.text-lang2 {
+  position: absolute; /* Positioned relative to Frame5.svg */
+  left: 30%; /* Center horizontally */
+  transform: translate(-50%, -10%); /* Center precisely */
+  font-family: var(--font-almarai), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  
+  color: hwb(0 0% 100%);
+   /* Prevent wrapping */
+ /* Prevent text from wrapping */
+  text-align: right;
+  /* Responsive width */
+  width: calc(100% - 30px); /* Ensure it fits within the frame */
+  max-width: 200%; /* Limit the max width to 100% of the container */
 
+  /* Responsive font size */
+  font-size: clamp(1px, 3.5vw, 64px); /* Min 2px, preferred 3.5% of viewport, max 64px */
+}
+
+
+/* styles/globals.css */
+
+.image-slider-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.image-slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+.mirrored-svg svg {
+  transform: scaleY(-1);
+}
