@@ -112,3 +112,48 @@
 .mirrored-svg svg {
   transform: scaleY(-1);
 }
+.text-comment {
+
+  font-family: 'Almarai', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 1;
+  line-height: 1.2; 
+  flex-grow: 0;
+  width: calc(100% - 30px); /* Ensure it fits within the frame */
+  max-width: 200%; /* Limit the max width to 100% of the container */
+
+  /* Responsive font size */
+  font-size: clamp(1px, 3.5vw, 64px); /* Min 2px, preferred 3.5% of viewport, max 64px */
+}
+
+.text-star {
+  position: absolute; /* Positioned relative to Frame5.svg */
+  top: 17%; /* Position near the bottom of the frame */
+  left: 40%; /* Center horizontally */
+  transform: translate(-75%, 10%); /* Center precisely */
+  font-family: var(--font-almarai), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+
+  /* Ensure the text stays on one line */
+  white-space: nowrap; /* Prevent wrapping */
+  
+
+  /* Responsive width */
+  width: calc(100% - 50px); /* Ensure it fits within the frame */
+  max-width: 50000px; /* Limit the max width */
+  
+  /* Responsive font size */
+  font-size: clamp(2px, 3.5vw, 64px); /* Min 12px, preferred 2% of viewport, max 18px */
+ 
+  
+  
+}

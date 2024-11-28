@@ -123,7 +123,27 @@ export default function Home() {
             <ImageSlider images={images} />
           </div>
           
-        <div className="flex justify-center items-center mt-[40%]  ">
+          <div className={" flex justify-center items-center  ml-[3%]  mt-[45%]  text-comment"}>
+      فكرت تزرع شعر بس خايف من النتيجة؟ مع تطبيقنا الذكي، راح تشوف شكلك الجديد قبل ما تدفع ولا ريال! بس ارفع صورتك، وفي دقيقة واحدة، راح تعرف مستقبلك. وكمان، فرصتك توفر 3500$ من تكلفة العملية!
+    </div>
+
+    <div className="relative  ml-[10%] mt-[5%] mr-[5%] ">
+          <Image
+            src="/stars.svg"
+            alt="Header"
+            width={10000000}
+            height={2000000}
+            objectFit="contain"
+            className="max-w-full h-auto mt-[2%]  mb-[2%]"
+          />
+
+          <div className="text-star ">
+          اكثر من 10000 تقييم للتجربه
+          </div>
+        </div>
+   
+          
+        <div className="flex justify-center items-center mt-[5%]  ">
           <ButtonWithText
             buttonText="قم بالتجربة مجانا"
             additionalText="صورك محمية 100% ومشفرة"
@@ -139,3 +159,5 @@ export default function Home() {
     </div>
   );
 }
+
+

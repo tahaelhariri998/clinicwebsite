@@ -162,8 +162,8 @@ const ImageSlider = ({ images }) => {
           style={{
             left: `${sliderPosition}%`,
             height: "100%",
-            width: "2px",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            width: "1px",
+            backgroundColor: "#FF9500",
           }}
         ></div>
       </div>
