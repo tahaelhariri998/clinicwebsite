@@ -8,9 +8,9 @@ export default function Home() {
 
 
 return (
-  <div>
-  <div>
-<svg width="393" height="32" viewBox="0 0 393 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div style={{ width: '100%', height: '100%' }}>
+  <div  style={{ width: '100%', height: '100%' }}>
+<svg  style={{ width: '100%', height: '100%' }}  width="393" height="32" viewBox="0 0 393 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="393" height="32" fill="#FF9500"/>
 <text 
           x="47%" 
@@ -52,7 +52,7 @@ return (
   </div>
 
   <div>
-  <svg width="393" height="56" viewBox="0 0 393 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+  <svg  style={{ width: '100%', height: '100%' }} width="393" height="56" viewBox="0 0 393 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d_1_658)">
 <rect width="393" height="52" fill="#FAFAFA"/>
 <rect x="16" y="9.5" width="49" height="33" fill="url(#pattern0_1_658)"/>
