@@ -14,7 +14,7 @@ export default function Home() {
   };
   return (
     <div style={{ width: '100%',height: '100%'  }} >
-      <header style={{ width: '100%',height: '100%'  }}  className="w-full fixed top-0 left-0  z-50">
+      <header style={{ width: '100%',height: '100%'  }}  className=" fixed top-0 left-0 z-50">
    
 
 
@@ -180,7 +180,7 @@ export default function Home() {
 
    
 
-      <main style={{ width: '100%',height: '100%'  }} className="mt-10 flex-grow  flex-col justify-center items-center">
+      <main className="mt-10 flex-grow  flex-col justify-center items-center">
       
         
 
