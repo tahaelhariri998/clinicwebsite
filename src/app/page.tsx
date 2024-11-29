@@ -12,11 +12,14 @@ export default function Home() {
     // Toggle the visibility of the second SVG
     setShowSecondSvg((prevState) => !prevState);
   };
-return (
-  <div style={{ width: '100%', height: '100%' }}>
+  return (
+    <div >
+      <header className="w-full fixed top-0 left-0 z-50">
+   
 
-  <header >
-  <div style={{ width: '100%', height: '100%' }}>
+
+  
+  <div >
 <svg   width="393" height="32" viewBox="0 0 393 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="393" height="32" fill="#FF9500"/>
 <text 
@@ -122,11 +125,11 @@ return (
 
 
   </div>
-  <div   > 
+  <div className=" z-50"  > 
 
   {showSecondSvg && (
         
-        <svg style={{ position: 'fixed', top: '41px', left: '208px' }}   width="123" height="176" viewBox="0 0 123 176" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg style={{ position: 'fixed', top: '41px', left: '208px' }} z-index="20"  width="123" height="176" viewBox="0 0 123 176" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <rect width="123" height="176" rx="4" fill="#F2F2F2" onClick={handleClick} />
 <g clip-path="url(#clip0_1_1481)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M20 22.5C20.23 22.5 20.843 22.274 21.487 20.986C21.793 20.374 22.05 19.616 22.229 18.75H17.771C17.95 19.616 18.207 20.374 18.513 20.986C19.157 22.274 19.77 22.5 20 22.5ZM17.554 17.25C17.4815 16.4182 17.4815 15.5818 17.554 14.75H22.446C22.518 15.5818 22.518 16.4182 22.446 17.25H17.554ZM23.757 18.75C23.533 19.974 23.164 21.058 22.691 21.918C24.0995 21.2748 25.2337 20.152 25.891 18.75H23.757ZM26.38 17.25H23.95C24.0152 16.4179 24.0152 15.5821 23.95 14.75H26.379C26.5408 15.5755 26.5408 16.4245 26.379 17.25H26.38ZM16.049 17.25H13.62C13.4582 16.4245 13.4582 15.5755 13.62 14.75H16.05C15.9848 15.5821 15.9848 16.4179 16.05 17.25H16.049ZM14.109 18.75H16.243C16.467 19.974 16.836 21.058 17.309 21.918C15.9005 21.2748 14.7663 20.152 14.109 18.75ZM17.771 13.25H22.229C22.05 12.384 21.793 11.626 21.487 11.014C20.843 9.726 20.23 9.5 20 9.5C19.77 9.5 19.157 9.726 18.513 11.014C18.207 11.626 17.95 12.384 17.771 13.25ZM23.757 13.25H25.891C25.2337 11.848 24.0995 10.7252 22.691 10.082C23.164 10.942 23.533 12.026 23.757 13.25ZM17.31 10.082C16.837 10.942 16.468 12.026 16.244 13.25H14.109C14.7663 11.848 15.9015 10.7252 17.31 10.082ZM20 8C22.1217 8 24.1566 8.84285 25.6569 10.3431C27.1571 11.8434 28 13.8783 28 16C28 18.1217 27.1571 20.1566 25.6569 21.6569C24.1566 23.1571 22.1217 24 20 24C17.8783 24 15.8434 23.1571 14.3431 21.6569C12.8429 20.1566 12 18.1217 12 16C12 13.8783 12.8429 11.8434 14.3431 10.3431C15.8434 8.84285 17.8783 8 20 8Z" fill="black"/>
@@ -171,10 +174,20 @@ return (
   
   </header>
 
-  <main>
+
+
+
+
+   
+
+      <main className="mt-10 flex-grow  flex-col justify-center items-center">
+      
+        
+
+     
 
  
-  <div style={{ 
+<div  style={{ 
 position: "absolute",
 width: "361px",
 height: "430px",
@@ -182,8 +195,8 @@ left: "16px",
 top: "160px",
 }}   >
 
- 
-  <svg width="361" height="431" viewBox="0 0 361 431" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+
+<svg z-index="0"  width="361" height="431" viewBox="0 0 361 431" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <rect x="24" y="94" width="24" height="24" rx="4" transform="rotate(180 24 94)" fill="#FF9500"/>
 <path d="M13.3 87.0002L9.66939 82.7645C9.2842 82.3151 9.2842 81.652 9.66939 81.2026L13.3 76.9669" stroke="white" stroke-width="1.1" stroke-linecap="round"/>
 <g clip-path="url(#clip0_1_146)">
@@ -243,9 +256,13 @@ top: "160px",
 </svg>
 </div>
 
-  </main>
-  </div>
-);
+
+ 
+       
+       
+      </main>
+    </div>
+  );
 
 }
 
