@@ -8,7 +8,7 @@ export default function Home() {
   const [showSecondSvg, setShowSecondSvg] = useState(false);
 
 
-  const handleClick = (event: React.MouseEvent<SVGPathElement, MouseEvent>): void => {
+  const handleClick: React.MouseEventHandler<SVGPathElement> = (): void => {
     // Toggle the visibility of the second SVG
     setShowSecondSvg((prevState) => !prevState);
   };
