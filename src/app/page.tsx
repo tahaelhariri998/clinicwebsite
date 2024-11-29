@@ -13,8 +13,8 @@ export default function Home() {
     setShowSecondSvg((prevState) => !prevState);
   };
   return (
-    <div>
-      <header   className=" fixed top-0 left-0 z-50">
+    <div style={{ height: '100%'  ,width: '100vw',  boxSizing: 'border-box'}} >
+      <header style={{ width: '100vw',height: '100%'  }}  className=" fixed top-0 left-0 z-50">
    
 
 
