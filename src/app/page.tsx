@@ -86,19 +86,21 @@ return (
 <clipPath id="clip0_1_658">
 <rect width="16" height="16" fill="white" transform="translate(220 18)"/>
 </clipPath>
-<clipPath id="clip1_1_658">
-<rect x="345" y="10" width="32" height="32" rx="8" fill="white"/>
-
-</clipPath>
-
 <image 
     id="image0_1_658"
     width="3832"
     height="2483"
     href="./LOGO Png.png"  
-    preserveAspectRatio="none"  
+    preserveAspectRatio="xMidYMid slice"
     z-index= "10"
   />
+<clipPath id="clip1_1_658">
+<rect x="345" y="10" width="32" height="32" rx="8" fill="white"/>
+
+
+</clipPath>
+
+
 </defs>
 </svg>
 
