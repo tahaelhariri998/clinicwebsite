@@ -13,13 +13,13 @@ export default function Home() {
     setShowSecondSvg((prevState) => !prevState);
   };
   return (
-    <div >
-      <header className="w-full fixed top-0 left-0 z-50">
+    <div style={{ width: '100%',height: '100%'  }}  >
+      <header style={{ width: '100%',height: '100%'  }}  className="w-full fixed top-0 left-0 z-50">
    
 
 
   
-  <div >
+  <div style={{ width: '100%',height: '100%'  }}  >
 <svg   width="393" height="32" viewBox="0 0 393 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="393" height="32" fill="#FF9500"/>
 <text 
@@ -180,7 +180,7 @@ export default function Home() {
 
    
 
-      <main className="mt-10 flex-grow  flex-col justify-center items-center">
+      <main style={{ width: '100%',height: '100%'  }}  className=" ">
       
         
 
@@ -192,7 +192,8 @@ position: "absolute",
 width: "361px",
 height: "430px",
 left: "16px",
-top: "160px",
+right: "16px",
+top: "120px",
 }}   >
 
 
