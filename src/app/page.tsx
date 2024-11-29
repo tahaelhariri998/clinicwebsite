@@ -1,10 +1,10 @@
 "use client";
  
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
  
 export default function Home() {
 
-  const [text, setText] = useState(" وفر 3500$ شاهد نتائج شعرك بالذكاء الاصطناعى فى 60 ثانيه ");
+  const text  = " وفر 3500$ شاهد نتائج شعرك بالذكاء الاصطناعى فى 60 ثانيه ";
 
 
 return (
