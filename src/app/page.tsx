@@ -3,35 +3,9 @@
 import React, { useRef, useState } from "react";
  
 export default function Home() {
-  const frameRef = useRef<HTMLImageElement>(null);
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const [isMirrored, setIsMirrored] = useState(false);
 
-  const images = [
-    {
-      firstImage: '/im2.jpg', // Example image before
-      secondImage: '/b2.jpg', // Example image after
-    },
-    {
-      firstImage: '/im1.jpg',
-      secondImage: '/b1.jpg',
-    },
-    // Add more image pairs here
-  ];
-
-  const toggleDropdown = () => {
-    setDropdownVisible((prev) => !prev);
-    setIsMirrored((prev) => !prev); // Toggle mirroring
-  };
-
-  const handleSelectOption = (option: string) => {
-    console.log("Selected option:", option);
-    setDropdownVisible(false); // Close the dropdown after selection
-  };
   const [text, setText] = useState(" وفر 3500$ شاهد نتائج شعرك بالذكاء الاصطناعى فى 60 ثانيه ");
-  const changeText = () => {
-    setText("New Text");  // Set the new text value
-  };
+
 
 return (
   <div>
