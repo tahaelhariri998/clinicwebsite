@@ -88,13 +88,16 @@ return (
 </clipPath>
 <clipPath id="clip1_1_658">
 <rect x="345" y="10" width="32" height="32" rx="8" fill="white"/>
+
 </clipPath>
+
 <image 
     id="image0_1_658"
     width="3832"
     height="2483"
     href="./LOGO Png.png"  
     preserveAspectRatio="none"  
+    z-index= "10"
   />
 </defs>
 </svg>
