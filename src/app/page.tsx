@@ -4,7 +4,7 @@ import ImageSlider from './ImageSlider';
 import React, { useRef, useState } from "react";
 import DropdownMenu from "./DropdownMenu"; // Import the DropdownMenu component
 import ButtonWithText from "./ButtonWithText";
-
+import MySVG from './design.svg';
 export default function Home() {
   const frameRef = useRef<HTMLImageElement>(null);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -31,133 +31,110 @@ export default function Home() {
     console.log("Selected option:", option);
     setDropdownVisible(false); // Close the dropdown after selection
   };
+  const [text, setText] = useState(" وفر 3500$ شاهد نتائج شعرك بالذكاء الاصطناعى فى 60 ثانيه ");
+  const changeText = () => {
+    setText("New Text");  // Set the new text value
+  };
 
-  return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
-      <header className="w-full fixed top-0 left-0 z-50">
-        <div className="relative w-full max-w-full">
-          <Image
-            src="/Frame5.svg"
-            alt="Header"
-            width={10000000}
-            height={2000000}
-            objectFit="contain"
-            className="max-w-full h-auto"
-          />
+return (
+  <div>
+  <div>
+<svg width="393" height="32" viewBox="0 0 393 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="393" height="32" fill="#FF9500"/>
+<text 
+          x="47%" 
+          y="50%" 
+          fill="white" 
+          fontSize="14" 
+          textAnchor="middle" 
+          dominantBaseline="middle" 
+          style={{
+            position: "absolute", 
+            width: "339px", 
+            height: "16px", 
+            left: "14px", 
+            top: "8px", 
+            fontFamily: "'Almarai'", 
+            fontWeight: "400", 
+            fontSize: "14px", 
+            lineHeight: "16px", 
+            textAlign: "center", 
+            color: "#FFFFFF"
+          }}
+        >
+        {text}
+      </text>
+<g clip-path="url(#clip0_1_655)">
+<path d="M367 23.9993H361.667C361.49 23.9993 361.32 23.9291 361.195 23.8041C361.07 23.6791 361 23.5095 361 23.3327C361 23.1559 361.07 22.9863 361.195 22.8613C361.32 22.7363 361.49 22.666 361.667 22.666H367C367.177 22.666 367.346 22.7363 367.471 22.8613C367.596 22.9863 367.667 23.1559 367.667 23.3327C367.667 23.5095 367.596 23.6791 367.471 23.8041C367.346 23.9291 367.177 23.9993 367 23.9993Z" fill="white"/>
+<path d="M365.667 21.3333H361.667C361.49 21.3333 361.32 21.2631 361.195 21.1381C361.07 21.0131 361 20.8435 361 20.6667C361 20.4899 361.07 20.3203 361.195 20.1953C361.32 20.0702 361.49 20 361.667 20H365.667C365.843 20 366.013 20.0702 366.138 20.1953C366.263 20.3203 366.333 20.4899 366.333 20.6667C366.333 20.8435 366.263 21.0131 366.138 21.1381C366.013 21.2631 365.843 21.3333 365.667 21.3333Z" fill="white"/>
+<path d="M364.333 18.6673H361.667C361.49 18.6673 361.32 18.5971 361.195 18.4721C361.07 18.347 361 18.1775 361 18.0007C361 17.8238 361.07 17.6543 361.195 17.5292C361.32 17.4042 361.49 17.334 361.667 17.334H364.333C364.51 17.334 364.68 17.4042 364.805 17.5292C364.93 17.6543 365 17.8238 365 18.0007C365 18.1775 364.93 18.347 364.805 18.4721C364.68 18.5971 364.51 18.6673 364.333 18.6673Z" fill="white"/>
+<path d="M369.667 23.9696C369.49 23.9775 369.317 23.9148 369.187 23.7953C369.056 23.6758 368.978 23.5094 368.97 23.3326C368.963 23.1558 369.025 22.9831 369.145 22.8525C369.264 22.7219 369.431 22.6441 369.607 22.6363C370.869 22.5208 372.072 22.0483 373.074 21.274C374.077 20.4997 374.839 19.4557 375.269 18.2643C375.7 17.0729 375.783 15.7834 375.507 14.5468C375.231 13.3102 374.609 12.1778 373.713 11.2822C372.817 10.3866 371.684 9.76478 370.448 9.4897C369.211 9.21462 367.921 9.29761 366.73 9.72896C365.539 10.1603 364.495 10.9222 363.721 11.9253C362.948 12.9284 362.476 14.1312 362.361 15.3929C362.345 15.569 362.26 15.7316 362.124 15.8449C361.988 15.9581 361.813 16.0128 361.637 15.9969C361.461 15.981 361.298 15.8958 361.185 15.76C361.072 15.6242 361.017 15.449 361.033 15.2729C361.219 13.2218 362.189 11.3214 363.74 9.9673C365.292 8.61321 367.306 7.90976 369.364 8.0034C371.421 8.09703 373.363 8.98052 374.786 10.47C376.208 11.9594 377.001 13.9401 377 15.9996C377.01 17.9985 376.268 19.928 374.92 21.4043C373.572 22.8805 371.718 23.7954 369.727 23.9669C369.707 23.9689 369.686 23.9696 369.667 23.9696Z" fill="white"/>
+<path d="M369 12C368.823 12 368.654 12.0702 368.529 12.1953C368.404 12.3203 368.333 12.4899 368.333 12.6667V16C368.333 16.1768 368.404 16.3463 368.529 16.4713L370.529 18.4713C370.655 18.5928 370.823 18.66 370.998 18.6584C371.172 18.6569 371.34 18.5868 371.463 18.4632C371.587 18.3396 371.657 18.1724 371.659 17.9976C371.66 17.8228 371.593 17.6544 371.471 17.5287L369.667 15.724V12.6667C369.667 12.4899 369.597 12.3203 369.472 12.1953C369.346 12.0702 369.177 12 369 12Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1_655">
+<rect width="16" height="16" fill="white" transform="translate(361 8)"/>
+</clipPath>
+</defs>
+</svg>
 
-          <div className="text-banner">
-            وفر 3500$ شاهد نتائج شعرك بالذكاء الاصطناعى فى 60 ثانيه
-          </div>
+  </div>
 
-          <div className="relative">
-            <Image
-              id="Frame2"
-              src="/Frame2.svg"
-              alt="Header"
-              width={1000000}
-              height={20000}
-              className="max-w-full h-auto z-0"
-              ref={frameRef}
-            />
-            <Image
-              src="/arow.svg"
-              alt="Arrow"
-              width={0}
-              height={0}
-              style={{
-                width: "8vw",
-                height: "auto",
-                transform: isMirrored ? "scaleY(-1)" : "scaleY(1)", // Apply mirroring
-                transition: "transform 0.3s ease", // Smooth animation
-              }}
-              className="absolute left-[75%] top-[20%] translate-y-[-55%] z-10 cursor-pointer"
-              onClick={toggleDropdown}
-            />
-            <Image
-              src="/lOGO Png.png"
-              alt="Logo"
-              width={100000}
-              height={0}
-              quality={100} // Optional: Ensures the best image quality
-              priority // Ensures the image loads quickly
-              className="absolute left-[5%] top-[50%] translate-y-[-55%] z-10 cursor-pointer w-[15%]"
-            />
-            <Image
-              src="/options.svg"
-              alt="Options"
-              width={100}
-              height={10}
-              style={{
-                width: "8vw",
-                height: "auto",
-              }}
-              className="absolute left-[87%] top-[50%] translate-y-[-55%] z-10"
-            />
-            <div
-              className={`absolute left-[52.99%] top-[62%] bg-[#F2F2F2] shadow-md rounded-md z-20 p-2 w-[31.2%] transition-all duration-1000 ease-out transform ${
-                isDropdownVisible
-                  ? "translate-y-0 opacity-100" // Fully visible and in place
-                  : "translate-y-[-5px] opacity-0" // Start above with transparency
-              }`}
-            >
-              <DropdownMenu
-                isVisible={isDropdownVisible}
-                options={[" العربية", " الإنكليزية", " التركية"]} // Dropdown options
-                logos={[
-                  "/arabic.png", // Arabic logo
-                  "/english.png", // English logo
-                  "/turkish.png", // Turkish logo
-                ]}
-                onSelect={handleSelectOption} // Handle option selection
-              />
-            </div>
+  <div>
+  <svg width="393" height="56" viewBox="0 0 393 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_1_658)">
+<rect width="393" height="52" fill="#FAFAFA"/>
+<rect x="16" y="9.5" width="49" height="33" fill="url(#pattern0_1_658)"/>
+<rect x="208" y="10" width="123" height="32" rx="4" fill="#F2F2F2"/>
+<g clip-path="url(#clip0_1_658)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M228 32.5C228.23 32.5 228.843 32.274 229.487 30.986C229.793 30.374 230.05 29.616 230.229 28.75H225.771C225.95 29.616 226.207 30.374 226.513 30.986C227.157 32.274 227.77 32.5 228 32.5ZM225.554 27.25C225.482 26.4182 225.482 25.5818 225.554 24.75H230.446C230.518 25.5818 230.518 26.4182 230.446 27.25H225.554ZM231.757 28.75C231.533 29.974 231.164 31.058 230.691 31.918C232.1 31.2748 233.234 30.152 233.891 28.75H231.757ZM234.38 27.25H231.95C232.015 26.4179 232.015 25.5821 231.95 24.75H234.379C234.541 25.5755 234.541 26.4245 234.379 27.25H234.38ZM224.049 27.25H221.62C221.458 26.4245 221.458 25.5755 221.62 24.75H224.05C223.985 25.5821 223.985 26.4179 224.05 27.25H224.049ZM222.109 28.75H224.243C224.467 29.974 224.836 31.058 225.309 31.918C223.9 31.2748 222.766 30.152 222.109 28.75ZM225.771 23.25H230.229C230.05 22.384 229.793 21.626 229.487 21.014C228.843 19.726 228.23 19.5 228 19.5C227.77 19.5 227.157 19.726 226.513 21.014C226.207 21.626 225.95 22.384 225.771 23.25ZM231.757 23.25H233.891C233.234 21.848 232.1 20.7252 230.691 20.082C231.164 20.942 231.533 22.026 231.757 23.25ZM225.31 20.082C224.837 20.942 224.468 22.026 224.244 23.25H222.109C222.766 21.848 223.901 20.7252 225.31 20.082ZM228 18C230.122 18 232.157 18.8429 233.657 20.3431C235.157 21.8434 236 23.8783 236 26C236 28.1217 235.157 30.1566 233.657 31.6569C232.157 33.1571 230.122 34 228 34C225.878 34 223.843 33.1571 222.343 31.6569C220.843 30.1566 220 28.1217 220 26C220 23.8783 220.843 21.8434 222.343 20.3431C223.843 18.8429 225.878 18 228 18Z" fill="black"/>
+</g>
+<path d="M255.199 23.682V28.974C255.199 29.142 255.246 29.2727 255.339 29.366C255.423 29.4593 255.516 29.506 255.619 29.506H255.899V30.5H255.311C254.882 30.5 254.541 30.3367 254.289 30.01C253.682 30.4393 253.029 30.654 252.329 30.654C251.349 30.654 250.574 30.2713 250.005 29.506C249.538 28.8807 249.305 28.134 249.305 27.266C249.305 26.2487 249.641 25.404 250.313 24.732C250.91 24.1253 251.643 23.822 252.511 23.822C253.006 23.822 253.505 23.934 254.009 24.158L254.611 23.682H255.199ZM254.009 25.138C253.598 24.9327 253.183 24.83 252.763 24.83C252.054 24.83 251.48 25.11 251.041 25.67C250.677 26.1273 250.495 26.6687 250.495 27.294C250.495 28.0407 250.672 28.6287 251.027 29.058C251.372 29.45 251.839 29.646 252.427 29.646C252.931 29.646 253.458 29.5107 254.009 29.24V25.138ZM261.309 20.98C261.496 20.98 261.655 21.05 261.785 21.19C261.925 21.3207 261.995 21.4793 261.995 21.666C261.995 21.862 261.925 22.03 261.785 22.17C261.655 22.3007 261.496 22.366 261.309 22.366C261.113 22.366 260.945 22.3007 260.805 22.17C260.675 22.03 260.609 21.862 260.609 21.666C260.609 21.4793 260.675 21.3207 260.805 21.19C260.945 21.05 261.113 20.98 261.309 20.98ZM257.753 26.342C258.08 25.5207 258.626 24.8813 259.391 24.424C260.007 24.0693 260.647 23.892 261.309 23.892C261.972 23.892 262.607 24.0693 263.213 24.424C263.988 24.8813 264.534 25.5207 264.851 26.342L264.725 26.678C264.081 26.9487 263.554 27.3173 263.143 27.784C262.723 28.2693 262.457 28.8433 262.345 29.506H264.991V30.5H262.149C261.869 30.5 261.599 30.3647 261.337 30.094H261.295C261.043 30.3647 260.773 30.5 260.483 30.5H255.807V29.506H260.273C260.171 28.9367 259.937 28.4 259.573 27.896C259.153 27.3733 258.593 26.9673 257.893 26.678L257.753 26.342ZM263.563 26.202C263.255 25.754 262.905 25.418 262.513 25.194C262.14 24.998 261.739 24.9 261.309 24.9C260.88 24.9 260.493 24.9887 260.147 25.166C259.737 25.3713 259.373 25.7167 259.055 26.202C259.541 26.4167 259.956 26.72 260.301 27.112C260.731 27.5973 261.057 28.204 261.281 28.932H261.323C261.557 28.176 261.893 27.5553 262.331 27.07C262.686 26.6967 263.097 26.4073 263.563 26.202ZM268.609 20.476V29.17C268.609 29.282 268.595 29.394 268.567 29.506H269.309V30.5H268.819L268.357 30.01H268.315C268.063 30.3367 267.736 30.5 267.335 30.5H264.899V29.506H266.887C267.064 29.506 267.204 29.436 267.307 29.296C267.382 29.2027 267.419 29.0953 267.419 28.974V20.476H268.609ZM272.916 20.476V29.17C272.916 29.534 272.794 29.842 272.552 30.094C272.3 30.3647 271.996 30.5 271.642 30.5H269.206V29.506H271.194C271.371 29.506 271.506 29.4453 271.6 29.324C271.684 29.2213 271.726 29.1047 271.726 28.974V20.476H272.916ZM276.039 20.476V30.36L275.437 30.85H274.849V20.476H276.039Z" fill="black"/>
+<path d="M309.12 29.3998L313.71 24.8098C313.896 24.6224 314.001 24.369 314.001 24.1048C314.001 23.8406 313.896 23.5872 313.71 23.3998C313.617 23.3061 313.506 23.2317 313.385 23.1809C313.263 23.1301 313.132 23.104 313 23.104C312.868 23.104 312.737 23.1301 312.615 23.1809C312.494 23.2317 312.383 23.3061 312.29 23.3998L307.71 27.9998C307.617 28.0935 307.506 28.1679 307.385 28.2187C307.263 28.2695 307.132 28.2956 307 28.2956C306.868 28.2956 306.737 28.2695 306.615 28.2187C306.494 28.1679 306.383 28.0935 306.29 27.9998L301.71 23.3998C301.523 23.2115 301.269 23.1052 301.004 23.1042C300.738 23.1033 300.483 23.2078 300.295 23.3948C300.107 23.5818 300 23.8359 299.999 24.1013C299.999 24.3666 300.103 24.6215 300.29 24.8098L304.88 29.3998C305.443 29.9616 306.205 30.2772 307 30.2772C307.795 30.2772 308.557 29.9616 309.12 29.3998Z" fill="#9B9B9B"/>
+<g clip-path="url(#clip1_1_658)">
+<rect x="345" y="10" width="32" height="32" rx="8" fill="#FAFAFA"/>
+<path d="M371.667 18H350.333" stroke="#717171" stroke-width="2" stroke-linecap="round"/>
+<path d="M371.667 26H350.333" stroke="#717171" stroke-width="2" stroke-linecap="round"/>
+<path d="M371.667 34H350.333" stroke="#717171" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1_658" x="-2" y="0" width="397" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_658"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_658" result="shape"/>
+</filter>
+<pattern id="pattern0_1_658" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlinkHref="#image0_1_658" transform="matrix(0.000271232 0 0 0.000402739 -0.0196808 0)"/>
+</pattern>
+<clipPath id="clip0_1_658">
+<rect width="16" height="16" fill="white" transform="translate(220 18)"/>
+</clipPath>
+<clipPath id="clip1_1_658">
+<rect x="345" y="10" width="32" height="32" rx="8" fill="white"/>
+</clipPath>
+<image 
+    id="image0_1_658"
+    width="3832"
+    height="2483"
+    href="./LOGO Png.png"  
+    preserveAspectRatio="none"  
+  />
+</defs>
+</svg>
 
-            <div className="text-lang">اللغة</div>
-          </div>
-        </div>
-      </header>
 
-      <main className="mt-10 flex-grow  flex-col justify-center items-center">
-      <div className="flex justify-center items-center relative mt-[70%]  ">
-            {/* Ensure ImageSlider is wrapped with relative positioning */}
-            <ImageSlider images={images} />
-          </div>
-          
-          <div className={" flex justify-center items-center  ml-[3%]  mt-[45%]  text-comment"}>
-      فكرت تزرع شعر بس خايف من النتيجة؟ مع تطبيقنا الذكي، راح تشوف شكلك الجديد قبل ما تدفع ولا ريال! بس ارفع صورتك، وفي دقيقة واحدة، راح تعرف مستقبلك. وكمان، فرصتك توفر 3500$ من تكلفة العملية!
-    </div>
+  </div>
 
-    <div className="relative  ml-[10%] mt-[5%] mr-[5%] ">
-          <Image
-            src="/stars.svg"
-            alt="Header"
-            width={10000000}
-            height={2000000}
-            objectFit="contain"
-            className="max-w-full h-auto mt-[2%]  mb-[2%]"
-          />
 
-          <div className="text-star ">
-          اكثر من 10000 تقييم للتجربه
-          </div>
-        </div>
-   
-          
-        <div className="flex justify-center items-center mt-[5%]  ">
-          <ButtonWithText
-            buttonText="قم بالتجربة مجانا"
-            additionalText="صورك محمية 100% ومشفرة"
-          />
-        </div>
+  </div>
+);
 
-        
-        
-
-       
-       
-      </main>
-    </div>
-  );
 }
 
 
