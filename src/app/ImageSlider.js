@@ -85,7 +85,7 @@ const ImageSlider = ({ images }) => {
   return (
     <div className="flex w-full h-full items-center">
       {/* Container for the buttons */}
-      <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 flex justify-between items-center px-4 z-10">
+      <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 flex justify-between items-center px-1 z-10">
         {/* Previous button */}
         <button
           className="focus:outline-none transition duration-200"
