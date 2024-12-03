@@ -370,7 +370,7 @@ style={{
   position: "absolute",
   width: "363px",
   height: "152px",
-   left: "8px",
+   
   
   top: "904px",
   }}>
@@ -1114,9 +1114,9 @@ style={{
 style={{
     
   position: "absolute",
-  width: "393px",
+  width: "363px",
   height: "402px",
-  left: "8px",
+  
   top: "4102px",
   
 }}>
@@ -1995,7 +1995,7 @@ style={{
       position: "absolute",
       width: "auto",
       height: "10px",
-      
+      left: "-8px",
      
       display: "flex",         // Enables flexbox
       justifyContent: "center", // Centers content horizontally
