@@ -1995,7 +1995,7 @@ style={{
       position: "absolute",
       width: "auto",
       height: "10px",
-      left: "8px",
+      
      
       display: "flex",         // Enables flexbox
       justifyContent: "center", // Centers content horizontally
