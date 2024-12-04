@@ -31,7 +31,7 @@ export default function Home() {
     setShowSecondSvg((prevState) => !prevState);
   };
   return (
-    <div className="flex flex-col  w-full " >
+    <div >
       <header  
      
 
@@ -354,7 +354,18 @@ style={{
 <SvgImageSwapper2 />
 
 </div>
+<div
+ style={{ 
+  position: "absolute",
+  width: "393px",
+  height: "152px",
+ 
+  
+  top: "1010px",
+  }}>
+<SvgImageSwapper4 />
 
+</div>
  
  <div
  style={{ 
@@ -366,7 +377,7 @@ style={{
   top: "920px",
   }}>
 
-  
+
 
  <svg width="393" height="152" viewBox="0 0 393 152" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_1_126)">
@@ -428,10 +439,7 @@ style={{
       top: "1108px",
     }}
         >
-<div>
-<SvgImageSwapper4 />
-
-</div>
+ 
 
        <svg width="356" height="64" viewBox="0 0 356 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="path-1-inside-1_1_190" fill="white">
