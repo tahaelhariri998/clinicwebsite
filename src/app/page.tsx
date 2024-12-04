@@ -443,7 +443,14 @@ style={{
 
  </div>
        
- <div  style={styles.container}>
+ <div  style={{ 
+      width: '367px',
+      height: '56px',
+      position: 'absolute',
+      top:"1110px",
+      
+      // Align text to the right
+    }}>
       <p style={{ ...styles.text, direction: 'rtl' }}>
         
         متردد تزرع شعرك؟ ما تعرف كيف رح تكون النتيجة؟
