@@ -9,12 +9,12 @@ const SvgImageSwapper = () => {
   return (
     <div>
        <Swiper
-        spaceBetween={10}  // Space between slides
-        slidesPerView={4}  // Show one image at a time
+        spaceBetween={20}  // Space between slides
+        slidesPerView={3}  // Show one image at a time
         pagination={{ clickable: true }}  // Enable clickable dots
-        loop={true}  // Infinite loop
+        
         effect="slide"  // Slide transition effect
-        centeredSlides={true}
+    
       >
         {/* Slide 1 */}
         <SwiperSlide>
