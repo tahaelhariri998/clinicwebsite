@@ -1,6 +1,4 @@
-// components/ButtonWithText.tsx
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 interface ButtonWithTextProps {
   buttonText: string;
@@ -11,17 +9,29 @@ const ButtonWithText: React.FC<ButtonWithTextProps> = ({
   buttonText,
   additionalText,
 }) => {
+  const [isHighlighted, setIsHighlighted] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsHighlighted((prev) => !prev);
+    }, 1000);
+
+    return () => clearInterval(interval); // Clean up the interval on unmount
+  }, []);
+
   return (
     <div className="w-full max-w-full p-4">
       {/* Button */}
       <button
-        className="bg-[#FF9500] text-white py-2  rounded-md hover:bg-orange-600 w-full"
+        className={`bg-[#FF9500] text-white py-2 rounded-md w-full transition-all duration-300 ${
+          isHighlighted ? "ring-4 ring-orange-400" : "ring-0"
+        }`}
         style={{
           fontFamily: "'Almarai'",
           fontStyle: "normal",
           fontWeight: 700,
-          fontSize: "16px",
-          lineHeight: "18px",
+          fontSize: "120%",
+          lineHeight: "150%",
           textAlign: "center",
         }}
       >
@@ -30,18 +40,19 @@ const ButtonWithText: React.FC<ButtonWithTextProps> = ({
 
       {/* Additional Text */}
       <div className="flex justify-end">
-        <span style={{
+        <span
+          style={{
             fontFamily: "Almarai",
             fontStyle: "normal",
             fontWeight: 400,
-            fontSize: "14px",
-            lineHeight: "16px",
+            fontSize: "120%",
+            lineHeight: "150%",
             textAlign: "center",
             color: "#0C68F4",
-            
           }}
-          className="text-blue-500 text-sm py-2  flex items-center">
-            {additionalText}
+          className="text-blue-500 text-sm py-2 flex items-center"
+        >
+          {additionalText}
 
           <svg
             width="14"

@@ -48,10 +48,8 @@ const ImageSlider = ({ images }) => {
 
   // Change to the next image when the animation completes
   useEffect(() => {
-    
-    if (sliderPosition == 1 && direction.current == -1) {
+    if (sliderPosition === 1 && direction.current === -1) {
       handleNext();
-      
     }
   }, [sliderPosition]);
 
@@ -65,7 +63,6 @@ const ImageSlider = ({ images }) => {
 
   // Handle previous/next button clicks
   const handlePrevious = () => {
-
     stopSlider();
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -75,7 +72,6 @@ const ImageSlider = ({ images }) => {
   };
 
   const handleNext = () => {
-    
     stopSlider();
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     startSlider();
@@ -83,73 +79,72 @@ const ImageSlider = ({ images }) => {
   };
 
   return (
-    <div className="flex w-full h-full items-center">
-  {/* Container for the buttons */}
-  <div className="absolute inset-y-0 w-full flex justify-between items-center px-1 z-10">
-    {/* Previous button */}
-    <button
-      className="focus:outline-none transition duration-200 mr-4 "
-      onClick={handlePrevious}
-    >
-       <img
-        src="arrowprev.png" // Replace with the actual path to your PNG
-        alt="Next"
-        className="w-6 h-6"
-      />
-    </button>
+    <div className="flex w-full h-full items-center justify-center relative">
+      {/* Previous Button */}
+      <button
+        className="absolute left-[0%] z-10 focus:outline-none transition-transform duration-300 transform hover:scale-110"
+        onClick={handlePrevious}
+        style={{ fontSize: "clamp(1.5rem, 3vw, 4rem)" }} // Dynamic size
+      >
+        <img
+          src="arrowprev.png" // Replace with actual path
+          alt="Previous"
+          className="w-8 h-8 md:w-16 md:h-16" // Scales on larger screens
+        />
+      </button>
 
-    {/* Next button */}
-    <button
-      className="focus:outline-none transition duration-200 mr-4"
-      onClick={handleNext}
-    >
-      <img
-        src="arownext.png" // Replace with the actual path to your PNG
-        alt="Next"
-        className="w-6 h-6"
-      />
-    </button>
-  </div>
+      {/* Image Container */}
+      <div
+        ref={containerRef}
+        className="relative left-[-1%] w-[80%] h-[20%] mr-[5%] ml-[5%] items-center justify-center overflow-hidden"
+        style={{ height: imageHeight }}
+      >
+        {/* First Image (Background) */}
+        <img
+          src={currentImage.firstImage}
+          alt="Before"
+          className="absolute  w-full h-full object-cover"
+        />
 
-  {/* Image container */}
-  <div
-    ref={containerRef}
-    className="absolute w-[80%] left-[8%] z-0"
-    style={{ height: imageHeight }}
-  >
-    {/* First image (background) */}
-    <img
-      src={currentImage.firstImage}
-      alt="Before"
-      className="absolute w-full h-full object-cover"
-    />
+        {/* Second Image */}
+        <div
+          className="absolute top-0 left-0 h-full"
+          style={{
+            clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
+          }}
+        >
+          <img
+            src={currentImage.secondImage}
+            alt="After"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-    {/* Second image */}
-    <div
-      className="absolute top-0 left-0 h-full"
-      style={{
-        clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
-      }}
-    >
-      <img
-        src={currentImage.secondImage}
-        alt="After"
-        className="w-full h-full object-cover"
-      />
+        {/* Vertical Slider Line */}
+        <div
+          className="absolute top-0"
+          style={{
+            left: `${sliderPosition}%`,
+            height: "100%",
+            width: "2px",
+            backgroundColor: "#FF9500",
+          }}
+        ></div>
+      </div>
+
+      {/* Next Button */}
+      <button
+        className="absolute right-[2%] z-10 focus:outline-none transition-transform duration-300 transform "
+        onClick={handleNext}
+        
+      >
+        <img
+          src="arownext.png" // Replace with actual path
+          alt="Next"
+          className="w-8 h-8 md:w-16 md:h-16"// Scales on larger screens
+        />
+      </button>
     </div>
-
-    {/* Vertical slider line */}
-    <div
-      className="absolute top-0"
-      style={{
-        left: `${sliderPosition}%`,
-        height: "100%",
-        width: "1px",
-        backgroundColor: "#FF9500",
-      }}
-    ></div>
-  </div>
-</div>
   );
 };
 
