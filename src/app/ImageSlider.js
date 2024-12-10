@@ -84,90 +84,72 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div className="flex w-full h-full items-center">
-      {/* Container for the buttons */}
-      <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 flex justify-between items-center px-1 z-10">
-        {/* Previous button */}
-        <button
-          className="focus:outline-none transition duration-200"
-          onClick={handlePrevious}
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="24"
-              y="24"
-              width="24"
-              height="24"
-              rx="4"
-              transform="rotate(180 24 24)"
-              fill="#FF9500"
-            />
-            <path
-              d="M13.3 17.0002L9.66939 12.7645C9.2842 12.3151 9.2842 11.652 9.66939 11.2026L13.3 6.96691"
-              stroke="white"
-              strokeWidth="1.1"
-              strokeLinecap="round"
-            />
-          </svg>
-        </button>
+  {/* Container for the buttons */}
+  <div className="absolute inset-y-0 w-full flex justify-between items-center px-1 z-10">
+    {/* Previous button */}
+    <button
+      className="focus:outline-none transition duration-200 mr-4 "
+      onClick={handlePrevious}
+    >
+       <img
+        src="arrowprev.png" // Replace with the actual path to your PNG
+        alt="Next"
+        className="w-6 h-6"
+      />
+    </button>
 
-        {/* Next button */}
-        <button
-          className="focus:outline-none transition duration-200"
-          onClick={handleNext}
-        >
-          <img
-            src="arownext.png" // Replace with the actual path to your PNG
-            alt="Next"
-            className="w-6 h-6"
-          />
-        </button>
-      </div>
+    {/* Next button */}
+    <button
+      className="focus:outline-none transition duration-200 mr-4"
+      onClick={handleNext}
+    >
+      <img
+        src="arownext.png" // Replace with the actual path to your PNG
+        alt="Next"
+        className="w-6 h-6"
+      />
+    </button>
+  </div>
 
-      {/* Image container */}
-      <div
-        ref={containerRef}
-        className="absolute w-[80%] left-[10%] z-0"
-        style={{ height: imageHeight }}
-      >
-        {/* First image (background) */}
-        <img
-          src={currentImage.firstImage}
-          alt="Before"
-          className="absolute w-full h-full object-cover"
-        />
+  {/* Image container */}
+  <div
+    ref={containerRef}
+    className="absolute w-[80%] left-[8%] z-0"
+    style={{ height: imageHeight }}
+  >
+    {/* First image (background) */}
+    <img
+      src={currentImage.firstImage}
+      alt="Before"
+      className="absolute w-full h-full object-cover"
+    />
 
-        {/* Second image */}
-        <div
-          className="absolute top-0 left-0 h-full"
-          style={{
-            clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
-          }}
-        >
-          <img
-            src={currentImage.secondImage}
-            alt="After"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        {/* Vertical slider line */}
-        <div
-          className="absolute top-0"
-          style={{
-            left: `${sliderPosition}%`,
-            height: "100%",
-            width: "1px",
-            backgroundColor: "#FF9500",
-          }}
-        ></div>
-      </div>
+    {/* Second image */}
+    <div
+      className="absolute top-0 left-0 h-full"
+      style={{
+        clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
+      }}
+    >
+      <img
+        src={currentImage.secondImage}
+        alt="After"
+        className="w-full h-full object-cover"
+      />
     </div>
+
+    {/* Vertical slider line */}
+    <div
+      className="absolute top-0"
+      style={{
+        left: `${sliderPosition}%`,
+        height: "100%",
+        width: "1px",
+        backgroundColor: "#FF9500",
+      }}
+    ></div>
+  </div>
+</div>
   );
 };
 
