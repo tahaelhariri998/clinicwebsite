@@ -7,7 +7,7 @@ import "swiper/css";
 
  
  
-import SvgImageSwapper2 from './SvgImageSwapper2';
+
 import SvgImageSwapper3 from './SvgImageSwapper3';
 import SvgImageSwapper4 from './SvgImageSwapper4';
 export default function Home() {
