@@ -322,4 +322,19 @@
   height: 100px;
   width: 100px;
 }
+.slide-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 150px; /* Set a consistent height for all slides */
+}
 
+.swiper-image {
+  max-height: 100%; /* Scale down to fit within the slide height */
+  max-width: 100%; /* Ensure the image does not overflow */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF9500; /* Change this to your desired color */
+}
