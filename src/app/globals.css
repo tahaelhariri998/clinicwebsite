@@ -338,3 +338,22 @@
 .swiper-pagination-bullet-active {
   background-color: #FF9500; /* Change this to your desired color */
 }
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+ 
+   
+}
+
+body {
+  transform: none !important;
+  zoom: 100%;
+  font-family: var(--font-almarai, sans-serif);
+}
+
+* {
+  box-sizing: border-box;
+}
