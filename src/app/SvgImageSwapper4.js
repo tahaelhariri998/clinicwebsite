@@ -5,23 +5,7 @@ import "swiper/css/pagination"; // Optional pagination styles
 import "./globals.css"; // Import custom styles if needed
 
 const SvgImageSwapper = () => {
-  const slideContainerStyle = {
-    backgroundColor: 'rgb(211, 208, 208)', // Grey background
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '200%', // Fixed width for all slides
-    height: '100px', // Fixed height for all slides
-    marginBottom: '8%',
-    borderRadius: '20px', // Optional: Rounded corners
-  };
-
-  const swiperImageStyle = {
-    maxWidth: '90%',
-    maxHeight: '100%',
-    objectFit: 'contain', // Ensure images fit well
-  };
-
+  
   return (
     <div>
       <Swiper
@@ -47,23 +31,23 @@ const SvgImageSwapper = () => {
         effect="slide" // Slide transition effect
       >
         {/* Slide 1 */}
-        <SwiperSlide style={slideContainerStyle}>
-          <img src="./azure.png" alt="Image 1" style={swiperImageStyle}/>
+        <SwiperSlide className="slide-container">
+          <img src="./azure.png" alt="Image 1" className="swiper-image" />
         </SwiperSlide>
 
         {/* Slide 2 */}
-        <SwiperSlide style={slideContainerStyle}>
-          <img src="./Jasper.png" alt="Image 2" style={swiperImageStyle}/>
+        <SwiperSlide className="slide-container">
+          <img src="./Jasper.png" alt="Image 2" className="swiper-image" />
         </SwiperSlide>
 
         {/* Slide 3 */}
-        <SwiperSlide style={slideContainerStyle}>
-          <img src="./sta.png" alt="Image 3" style={swiperImageStyle}/>
+        <SwiperSlide className="slide-container">
+          <img src="./sta.png" alt="Image 3" className="swiper-image" />
         </SwiperSlide>
 
         {/* Slide 4 */}
-        <SwiperSlide style={slideContainerStyle}>
-          <img src="./tflow.png" alt="Image 4" style={swiperImageStyle}/>
+        <SwiperSlide className="slide-container">
+          <img src="./tflow.png" alt="Image 4" className="swiper-image" />
         </SwiperSlide>
       </Swiper>
     </div>

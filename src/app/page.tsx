@@ -8,12 +8,12 @@ import Terms from "./terms";
 import Privacy from "./privacy";
 import Call from "./call";
 import "swiper/css";
-
+import './globals.css';
  
  
 
-import SvgImageSwapper3 from './SvgImageSwapper3';
-import SvgImageSwapper4 from './SvgImageSwapper4';
+import SvgImageSwapper3 from "./SvgImageSwapper3";
+import SvgImageSwapper4 from "./SvgImageSwapper4";
 
 
 export default function Home() {
