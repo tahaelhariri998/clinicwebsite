@@ -12,7 +12,7 @@ const ContactUsComponent = () => {
         <section className="bg-[#FF9500] text-white py-12">
           <div className="container mx-auto px-6 lg:px-20 text-center">
             <h1 className="text-4xl font-bold mb-4">اتصل بنا  </h1>
-            <p className="text-lg">نحن في 'Next Graft' نرحب بتواصلكم في أي وقت. نحن متاحون على مدار الساعة لتقديم الدعم والإجابة على استفساراتكم من خلال الواتساب والبريد الإلكتروني.</p>
+            <p className="text-lg">نحن في Next Graft نرحب بتواصلكم في أي وقت. نحن متاحون على مدار الساعة لتقديم الدعم والإجابة على استفساراتكم من خلال الواتساب والبريد الإلكتروني.</p>
           </div>
         </section>
 
@@ -54,7 +54,7 @@ const ContactUsComponent = () => {
 
         <section className="bg-[#FF9500] text-white py-12">
           <div className="container mx-auto px-6 lg:px-20 text-center">
-            <p className="text-lg">في 'Next Graft'، نلتزم بتقديم أعلى مستويات الدعم والرعاية لعملائنا. نحن هنا لمساعدتكم ونتطلع إلى سماع منكم.</p>
+            <p className="text-lg">في Next Graft، نلتزم بتقديم أعلى مستويات الدعم والرعاية لعملائنا. نحن هنا لمساعدتكم ونتطلع إلى سماع منكم.</p>
           </div>
         </section>
       </main>

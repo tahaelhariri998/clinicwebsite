@@ -12,7 +12,7 @@ const AboutComponent = () => {
         <section className="bg-[#FF9500] text-white py-12">
           <div className="container mx-auto px-6 lg:px-20 text-center">
             <h1 className="text-4xl font-bold mb-4">من نحن - Next Graft</h1>
-            <p className="text-lg">أهلاً بكم في "Next Graft"، حيث الابتكار والخبرة يتحدان لإعادة تعريف جمالكم الطبيعي.</p>
+            <p className="text-lg">أهلاً بكم في Next Graft، حيث الابتكار والخبرة يتحدان لإعادة تعريف جمالكم الطبيعي.</p>
           </div>
         </section>
 
