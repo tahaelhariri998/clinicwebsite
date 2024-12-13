@@ -323,16 +323,21 @@
   width: 100px;
 }
 .slide-container {
+  background-color: rgb(211, 208, 208); /* Grey background for slides */
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 150px; /* Set a consistent height for all slides */
+  justify-content: center;
+  align-items: center;
+  width: 200%; /* Fixed width for all slides */
+  height: 100px; /* Fixed height for all slides */
+  
+  margin-bottom: 8%;
+  border-radius: 20px; /* Optional: Rounded corners */
 }
 
 .swiper-image {
-  max-height: 100%; /* Scale down to fit within the slide height */
-  max-width: 100%; /* Ensure the image does not overflow */
-  object-fit: contain; /* Maintain aspect ratio */
+  max-width: 90%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure images fit well */
 }
 
 .swiper-pagination-bullet-active {
@@ -343,7 +348,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 95%;
+  width: 96.5%;
  
    
 }
