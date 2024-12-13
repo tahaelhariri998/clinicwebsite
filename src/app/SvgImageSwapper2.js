@@ -1,4 +1,4 @@
-
+import "./globals.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 const SvgImageSwapper = () => {
   // State to track which SVG is displayed
