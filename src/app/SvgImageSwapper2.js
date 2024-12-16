@@ -1,4 +1,4 @@
-import "./globals.css";
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
 const SvgImageSwapper = () => {
   // State to track which SVG is displayed
@@ -30,11 +30,11 @@ const SvgImageSwapper = () => {
        }}
              
             >
-  <img src="./im1.jpg" alt="Image 1"     style={{
+  <Image src="./im1.jpg" alt="Image 1"     style={{
            
            width: "170px", height: "200px",
       }}/>
-  <img src="./b1.jpg" alt="Image 2"    style={{
+  <Image src="./b1.jpg" alt="Image 2"    style={{
            
            width: "170px", height: "200px",
       }} />
@@ -54,11 +54,11 @@ const SvgImageSwapper = () => {
        }}
              
             >
-  <img src="./im2.jpg" alt="Image 1" style={{
+  <Image src="./im2.jpg" alt="Image 1" style={{
            
            width: "170px", height: "200px",
       }}   />
-  <img src="./b2.jpg" alt="Image 2" style={{
+  <Image src="./b2.jpg" alt="Image 2" style={{
            
            width: "170px", height: "200px",
       }}  />
@@ -77,11 +77,11 @@ const SvgImageSwapper = () => {
        }}
              
             >
-  <img src="./im3.jpg" alt="Image 1" style={{
+  <Image src="./im3.jpg" alt="Image 1" style={{
            
            width: "170px", height: "200px",
       }}  />
-  <img src="./b3.jpg" alt="Image 2" style={{
+  <Image src="./b3.jpg" alt="Image 2" style={{
            
            width: "170px", height: "200px",
       }}  />
