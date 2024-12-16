@@ -59,11 +59,7 @@ const ContactUsComponent = () => {
         </section>
       </main>
 
-      <style jsx>{`
-        .container {
-          max-width: 1200px;
-        }
-      `}</style>
+      
     </>
   );
 };
