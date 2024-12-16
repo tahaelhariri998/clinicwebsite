@@ -14,7 +14,7 @@ const ContactUsComponent = () => {
           <div className="container mx-auto px-6 lg:px-20 text-center">
             <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
             <p className="text-lg">
-              At Next Graft, we welcome your communication anytime. We're available 24/7 to provide support and answer your inquiries through WhatsApp and email.
+              At Next Graft, we welcome your communication anytime. We are available 24/7 to provide support and answer your inquiries through WhatsApp and email.
             </p>
           </div>
         </section>
@@ -60,7 +60,7 @@ const ContactUsComponent = () => {
         <section className="bg-[#FF9500] text-white py-12">
           <div className="container mx-auto px-6 lg:px-20 text-center">
             <p className="text-lg">
-              At Next Graft, we are committed to providing the highest levels of support and care to our clients. We're here to help and look forward to hearing from you.
+              At Next Graft, we are committed to providing the highest levels of support and care to our clients. We are here to help and look forward to hearing from you.
             </p>
           </div>
         </section>
