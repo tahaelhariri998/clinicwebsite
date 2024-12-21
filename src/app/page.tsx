@@ -16,7 +16,7 @@ import './globals.css';
 
 
 import Cookies from "js-cookie";
-import { Maiden_Orange } from "next/font/google";
+
 
 export default function Home() {
  
