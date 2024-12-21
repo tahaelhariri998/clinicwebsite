@@ -1437,7 +1437,7 @@ left:"3%"
           color: "#0C68F4",
         }}
       >
-        Note: Don't see your question? Contact us for a quick response! 📞✨
+        Note: Do not see your question? Contact us for a quick response! 📞✨
       </span>
 
 </div>
