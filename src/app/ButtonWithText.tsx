@@ -45,8 +45,8 @@ const ButtonWithText: React.FC<ButtonWithTextProps> = ({
             fontFamily: "Almarai",
             fontStyle: "normal",
             fontWeight: 400,
-            fontSize: "120%",
-            lineHeight: "150%",
+            fontSize: "90%",
+            lineHeight: "100%",
             textAlign: "center",
             color: "#0C68F4",
           }}
