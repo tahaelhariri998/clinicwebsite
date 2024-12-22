@@ -3,14 +3,15 @@
 import ImageSlider from './ImageSlider';
 import DropdownComponentEN from "./DropdownComponenten";
 import ButtonWithText from "./ButtonWithText";
-import SvgImageSwapper3 from "./SvgImageSwapper3";
+import SvgImageSwapperen from "./SvgImageSwapperen";
 import SvgImageSwapper4 from "./SvgImageSwapper4";
 import "swiper/css";
 import './globals.css';
+import React, { forwardRef } from 'react';
 
 
  
-const mainen = () => {
+const mainen = ({ elementRef }) => {
 
     
   const images = [
@@ -31,8 +32,8 @@ const mainen = () => {
       fontFamily: "'Almarai', sans-serif",
       fontStyle: 'normal',
       fontWeight: 700,
-      fontSize: '150%',
-      lineHeight: '150%',
+      fontSize: '100%',
+      lineHeight: '100%',
       color: '#000000',
     },
     highlight: {
@@ -79,7 +80,8 @@ marginTop:"20%",
     {" "}
     <span className="font-bold">See your future look in just 60 seconds! ✨</span>
     {" "}
-    Try our smart tool for FREE
+    <span style={{ color: "#FF9500" }}>Try our smart tool for FREE</span>
+     
     {" "}
     💰
     {" "}
@@ -1060,7 +1062,7 @@ marginTop:"2%"
 
 }}
 >
-<SvgImageSwapper3 />
+<SvgImageSwapperen />
 
 </div>
 
@@ -1207,7 +1209,7 @@ marginTop:"5%"
 
 
     
-<div  
+<div  ref={elementRef}
 style={{
 
 position: "relative",

@@ -8,9 +8,10 @@ import SvgImageSwapper4 from "./SvgImageSwapper4";
 import "swiper/css";
 import './globals.css';
 
+import React, { forwardRef } from 'react';
 
  
-const mainarbic = () => {
+const mainarbic = ({ elementRef }) => {
 
     
   const images = [
@@ -86,7 +87,8 @@ fontSize:"150%"
 {" "}
 <span className="font-bold">شوف نتيجة زراعة شعرك في ٦٠ ثانية! ✨</span>
 {" "}
-جرب أداتنا الذكية مجاناً
+<span style={{ color: "#FF9500" }}>جرب أداتنا الذكية مجاناً
+</span>
 {" "}
 💰
 {" "}
@@ -1205,7 +1207,7 @@ marginTop:"5%"
 
 
     
-<div  
+<div  ref={elementRef}
 style={{
 
 position: "relative",
