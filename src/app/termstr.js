@@ -22,7 +22,7 @@ const TermsConditionsComponent = () => {
             <p className="text-lg mb-6">Next Graft&apos;a hoş geldiniz. Bu bölüm, web sitemizin ve hizmetlerimizin kullanımını düzenleyen yasal koşulları kapsar. Next Graft web sitesine giriş yaparak ve kullanarak, bu şartlar ve koşullara uymayı açıkça kabul etmiş olursunuz.</p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Fikri Mülkiyet Hakları</h2>
-            <p className="text-lg mb-6">Web sitesinde yayınlanan metinler, görseller, simgeler, grafikler, yazılımlar ve diğer materyaller dahil tüm içerik, Next Graft'ın veya üçüncü tarafların korumalı mülkiyetidir. Sadece bu şartlara uygun olarak kullanılabilir.</p>
+            <p className="text-lg mb-6">Web sitesinde yayınlanan metinler, görseller, simgeler, grafikler, yazılımlar ve diğer materyaller dahil tüm içerik, Next Graft&apos;ın veya üçüncü tarafların korumalı mülkiyetidir. Sadece bu şartlara uygun olarak kullanılabilir.</p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Kullanıcı Yükümlülükleri</h2>
             <p className="text-lg mb-6">Kullanıcı olarak, web sitesini yasa dışı amaçlarla kullanmamayı ve web sitesinin veya sunduğumuz hizmetlerin işleyişini engelleyebilecek veya müdahale edebilecek herhangi bir faaliyetten kaçınmayı kabul edersiniz.</p>

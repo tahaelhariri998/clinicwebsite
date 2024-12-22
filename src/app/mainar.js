@@ -8,7 +8,7 @@ import SvgImageSwapper4 from "./SvgImageSwapper4";
 import "swiper/css";
 import './globals.css';
 
-import React, { forwardRef } from 'react';
+ 
 
  
 const mainarbic = ({ elementRef }) => {
