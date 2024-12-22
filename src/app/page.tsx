@@ -72,6 +72,8 @@ export default function Home() {
   useEffect(() => {
     const savedSvgState = Cookies.get('lang');
     console.log(savedSvgState);
+    console.log('Language loaded from cookies:', savedSvgState);
+    console.log('Language loaded from cookies:', lang);
     setlang(savedSvgState || ""); // Set state based on cookie or default to an empty string
     if (savedSvgState === "EN") {
       setEN(true);

@@ -12,14 +12,14 @@ const TermsConditionsComponent = () => {
         <section className="bg-[#FF9500] text-white py-12">
           <div className="container mx-auto px-6 lg:px-20 text-center">
             <h1 className="text-4xl font-bold mb-4">Şartlar ve Koşullar</h1>
-            <p className="text-lg">Next Graft'a hoş geldiniz. Bu bölüm, web sitemizin ve hizmetlerimizin kullanımını düzenleyen yasal koşulları kapsar.</p>
+            <p className="text-lg">Next Graft&apos;a hoş geldiniz. Bu bölüm, web sitemizin ve hizmetlerimizin kullanımını düzenleyen yasal koşulları kapsar.</p>
           </div>
         </section>
 
         <section className="py-12">
           <div className="container mx-auto px-6 lg:px-20">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Giriş</h2>
-            <p className="text-lg mb-6">Next Graft'a hoş geldiniz. Bu bölüm, web sitemizin ve hizmetlerimizin kullanımını düzenleyen yasal koşulları kapsar. Next Graft web sitesine giriş yaparak ve kullanarak, bu şartlar ve koşullara uymayı açıkça kabul etmiş olursunuz.</p>
+            <p className="text-lg mb-6">Next Graft&apos;a hoş geldiniz. Bu bölüm, web sitemizin ve hizmetlerimizin kullanımını düzenleyen yasal koşulları kapsar. Next Graft web sitesine giriş yaparak ve kullanarak, bu şartlar ve koşullara uymayı açıkça kabul etmiş olursunuz.</p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Fikri Mülkiyet Hakları</h2>
             <p className="text-lg mb-6">Web sitesinde yayınlanan metinler, görseller, simgeler, grafikler, yazılımlar ve diğer materyaller dahil tüm içerik, Next Graft'ın veya üçüncü tarafların korumalı mülkiyetidir. Sadece bu şartlara uygun olarak kullanılabilir.</p>

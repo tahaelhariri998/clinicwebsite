@@ -78,7 +78,7 @@ const PrivacyPolicyComponent = () => {
         <section className="bg-[#FF9500] text-white py-12">
           <div className="container mx-auto px-6 lg:px-20 text-center">
             <p className="text-lg">
-              Next Graft'a duyduğunuz güvenden dolayı teşekkür ederiz. Gizliliğinizi ve veri güvenliğinizi korumak için çok çalışıyoruz.
+              Next Graft&apos;a duyduğunuz güvenden dolayı teşekkür ederiz. Gizliliğinizi ve veri güvenliğinizi korumak için çok çalışıyoruz.
             </p>
           </div>
         </section>
