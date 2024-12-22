@@ -28,7 +28,7 @@ const AboutComponent = () => {
             <p className="text-lg mb-6">En iyi fiyatları almanızı sağlamak için kliniklerle pazarlık yapma sorumluluğunu üstleniyoruz. Uzman pazarlık ekibimiz, sadece Next Graft aracılığıyla sunulan özel teklifler almanız için çaba gösterir. Her zaman sizin yararınıza çalışarak, optimal maliyetle sorunsuz bir deneyim yaşamanızı sağlıyoruz.</p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Neden Next Graft?</h2>
-            <p className="text-lg">Next Graft&apos;ta, güven ve tam memnuniyetin sizinle olan ilişkimizin temeli olduğuna inanıyoruz. Saçınızı ve özgüveninizi geri kazanma yolculuğunuzda profesyonellik, şeffaflık ve tam destek sunuyoruz. Kalite ve detaylara özenin buluştuğu unutulmaz bir deneyim için Next Graft'ı seçin.</p>
+            <p className="text-lg">Next Graft&apos;ta, güven ve tam memnuniyetin sizinle olan ilişkimizin temeli olduğuna inanıyoruz. Saçınızı ve özgüveninizi geri kazanma yolculuğunuzda profesyonellik, şeffaflık ve tam destek sunuyoruz. Kalite ve detaylara özenin buluştuğu unutulmaz bir deneyim için Next Graft&apos;ı seçin.</p>
           </div>
         </section>
 

@@ -68,6 +68,7 @@ export default function Home() {
   const [showMinue, setshowMinue] = useState(false);
   const [isLoading, setIsLoading] = useState(true); // Track if data is being loaded
   const savedSvgState = Cookies.get('lang');
+  console.log(savedSvgState);
   // Load the cookie value before rendering the component
   useEffect(() => {
     const savedSvgState = Cookies.get('lang');
