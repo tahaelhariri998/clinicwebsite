@@ -68,8 +68,8 @@ export default function Home() {
   const [showMinue, setshowMinue] = useState(false);
   const [isLoading, setIsLoading] = useState(true); // Track if data is being loaded
 
-  const savedSvgState = Cookies.get('lang') || 'EN';   
-  
+  const savedSvgState = 'EN';   
+
   // Load the cookie value before rendering the component
   useEffect(() => {
     const savedSvgState = Cookies.get('lang');
@@ -77,22 +77,27 @@ export default function Home() {
     console.log('Language loaded from cookies:', savedSvgState);
     console.log('Language loaded from cookies:', lang);
     setlang(savedSvgState || ""); // Set state based on cookie or default to an empty string
-    if (savedSvgState === "EN") {
+     if (savedSvgState === "EN") {
       setEN(true);
       setTR(false);
       setAR(false);
     }
-    if (savedSvgState === "TR") {
+    else if (savedSvgState === "TR") {
       setEN(false);
       setTR(true);
       setAR(false);
     }
-    if (savedSvgState === "AR") {
+    else if (savedSvgState === "AR") {
       setEN(false);
       setTR(false);
       setAR(true);
     }
-    
+    else {
+      setEN(true);
+      setTR(false);
+      setAR(false);
+
+    }
     setIsLoading(false); // Mark loading as complete
   }, []);
 
