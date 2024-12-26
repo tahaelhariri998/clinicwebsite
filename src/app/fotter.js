@@ -81,7 +81,7 @@ const Footer = ({ language , click }) => {
             <img src="/arabic.png" alt="UAE Flag" className="w-8 h-8 rounded-full" />
             <span className="text-lg">{content.madeWith}</span>
           </div>
-          <img src="/LOGOPng.png" alt="Next Graft" className=" w-32" onClick={() => click('main')}  />
+          <img src="/logo.png" alt="Next Graft" className=" w-32" onClick={() => click('main')}  />
         </div>
       </div>
     </footer>
