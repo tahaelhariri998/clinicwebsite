@@ -8,7 +8,7 @@ const SvgImageSwapper = () => {
   
   return (
     <div>
-      <Swiper className="bg-gray-100"
+      <Swiper 
         modules={[Autoplay, Pagination]} // Register modules
         spaceBetween={20} // Space between slides
         slidesPerView={2.25} // Default slides per view

@@ -17,6 +17,7 @@ const SvgImageSwapper = () => {
         spaceBetween={20} // Space between slides
         slidesPerView={1.25} // Default slides per view
         pagination={{ clickable: true }} // Enable clickable dots
+        loop={true} // Enable loop mode
         autoplay={{
           delay: 3000, // 2 seconds delay for autoplay
           disableOnInteraction: false, // Continue autoplay after interaction

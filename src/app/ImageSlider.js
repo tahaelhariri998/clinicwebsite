@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0); // Current image index
   const [sliderPosition, setSliderPosition] = useState(0); // Slider position (0% to 100%)
@@ -82,15 +82,10 @@ const ImageSlider = ({ images }) => {
     <div className="flex w-full h-full items-center justify-center relative">
       {/* Previous Button */}
       <button
-        className="absolute left-[0%] z-10 focus:outline-none transition-transform duration-300 transform hover:scale-110"
-        onClick={handlePrevious}
-        style={{ fontSize: "clamp(1.5rem, 3vw, 4rem)" }} // Dynamic size
-      >
-        <img
-          src="arrowprev.png" // Replace with actual path
-          alt="Previous"
-          className="w-8 h-8 md:w-16 md:h-16" // Scales on larger screens
-        />
+className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/95 p-3 rounded-full shadow-lg hover:bg-white transition-all group-hover:left-6 z-50"     
+   onClick={handlePrevious}   >
+                        <ChevronLeft className="w-6 h-6" />
+
       </button>
 
       {/* Image Container */}
@@ -134,15 +129,12 @@ const ImageSlider = ({ images }) => {
 
       {/* Next Button */}
       <button
-        className="absolute right-[2%] z-10 focus:outline-none transition-transform duration-300 transform "
+       className="absolute top-1/2 right-4 -translate-y-1/2 bg-orange-400 p-3 rounded-full shadow-lg text-white hover:bg-orange-500 transition-all group-hover:right-6"
         onClick={handleNext}
         
       >
-        <img
-          src="arownext.png" // Replace with actual path
-          alt="Next"
-          className="w-8 h-8 md:w-16 md:h-16"// Scales on larger screens
-        />
+        <ChevronRight className="w-6 h-6" />
+       
       </button>
     </div>
   );
