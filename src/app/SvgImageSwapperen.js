@@ -16,7 +16,12 @@ const SvgImageSwapper = () => {
         modules={[Autoplay, Pagination]} // Register modules
         spaceBetween={20} // Space between slides
         slidesPerView={1.25} // Default slides per view
-        pagination={{ clickable: true }} // Enable clickable dots
+        pagination={{ bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+          renderBullet: (index, className) => {
+            return `<span class="${className}" style="background-color: #FF9500"></span>`;
+          },
+           clickable: true }} // Enable clickable dots
         autoplay={{
           delay: 3000, // 2 seconds delay for autoplay
           disableOnInteraction: false, // Continue autoplay after interaction
