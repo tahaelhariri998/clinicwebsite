@@ -277,7 +277,7 @@ const mainarbic = ({ elementRef }) => {
 
    <h1 className="mt-20 text-4xl md:text-5xl lg:text-6xl font-bold text-left leading-tight">
   <p style={{ lineHeight: "1.5", direction: 'ltr' }}>
-    Hesitant to grow your hair? Don't know what the result will be?
+    Hesitant to grow your hair? Don&apos;t know what the result will be?
     {<span style={{ color: '#F4A300' }}>Our smart solution will put you at ease</span>}  
     !👨‍🦲✨
     <div className="absolute mt-2 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-transparent"></div>
