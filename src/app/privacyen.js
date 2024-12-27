@@ -1,23 +1,29 @@
-import React from 'react'; 
+import React from 'react';
 
 const PrivacyPolicyComponent = () => {
   return (
-    <>
+    <div className="min-h-screen w-[96.5%] mx-auto">
       <div>
         <title>Privacy Policy - Next Graft</title>
         <meta name="description" content="Learn about Next Graft's privacy policy regarding the collection and usage of personal information." />
       </div>
 
-      <main className="bg-gray-100 text-gray-800 font-sans leading-relaxed">
-        <section className="bg-[#FF9500] text-white py-12">
-          <div className="container mx-auto px-6 lg:px-20 text-center">
+      <main className="text-gray-800 font-sans leading-relaxed">
+        {/* Orange Header Section */}
+        <section className="relative w-full bg-[#FF9500] text-white py-12">
+          <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+          <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h1 className="text-4xl font-bold mb-4">Privacy Policy</h1>
             <p className="text-lg">Welcome to the Next Graft privacy policy page, where we explain how we collect, use, and protect your personal information.</p>
           </div>
         </section>
 
-        <section className="py-12">
-          <div className="container mx-auto px-6 lg:px-20">
+        {/* Main Content Section */}
+        <section className="relative w-full bg-gray-100 py-12">
+          <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
+          <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
+          <div className="relative max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Policy Scope</h2>
             <p className="text-lg mb-6">This privacy policy explains how we collect, use, and protect personal information obtained from you when using the Next Graft website.</p>
 
@@ -31,7 +37,7 @@ const PrivacyPolicyComponent = () => {
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. How We Use Your Information</h2>
             <p className="text-lg mb-6">We use collected information for the following purposes:</p>
-            <ul className="list-disc pl-6 mb-6">
+            <ul className="list-disc pl-6 mb-6 text-lg">
               <li>Providing and improving our services.</li>
               <li>Communicating with you about our services or promotions.</li>
               <li>Analyzing website usage to improve user experience.</li>
@@ -53,23 +59,20 @@ const PrivacyPolicyComponent = () => {
             <p className="text-lg mb-6">We may modify this policy from time to time. Any changes will be posted on this page, and we encourage you to review the privacy policy regularly.</p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. How to Contact Us</h2>
-            <p className="text-lg mb-6">If you have any questions or concerns about this privacy policy, please contact us at: <a href="mailto:info@nextgraft.com" className="text-[#FF9500]">info@nextgraft.com</a>.</p>
+            <p className="text-lg mb-6">If you have any questions or concerns about this privacy policy, please contact us at: <a href="mailto:info@nextgraft.com" className="text-[#FF9500] hover:text-[#FF9500]/80">info@nextgraft.com</a>.</p>
           </div>
         </section>
 
-        <section className="bg-[#FF9500] text-white py-12">
-          <div className="container mx-auto px-6 lg:px-20 text-center">
+        {/* Orange Footer Section */}
+        <section className="relative w-full bg-[#FF9500] text-white py-12">
+          <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+          <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-lg">We appreciate your trust in Next Graft and work hard to protect your privacy and data security.</p>
           </div>
         </section>
       </main>
-
-      <style jsx>{`
-        .container {
-          max-width: 1200px;
-        }
-      `}</style>
-    </>
+    </div>
   );
 };
 

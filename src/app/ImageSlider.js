@@ -129,7 +129,7 @@ className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/95 p-3 rounded-full
 
       {/* Next Button */}
       <button
-       className="absolute top-1/2 right-4 -translate-y-1/2 bg-orange-400 p-3 rounded-full shadow-lg text-white hover:bg-orange-500 transition-all group-hover:right-6"
+       className="absolute top-1/2 right-4 -translate-y-1/2 bg-orange-400  p-3 rounded-full shadow-lg text-white hover:bg-orange-500 transition-all group-hover:right-6 z-50"
         onClick={handleNext}
         
       >

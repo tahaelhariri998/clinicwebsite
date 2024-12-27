@@ -39,8 +39,8 @@ const Footer = ({ language , click }) => {
   const isRTL = language === 'ar';
 
   return (
-    <footer className="bg-gray-100 py-12">
-      <div className="max-w-7xl mx-auto px-8">
+    <footer className="bg-gray-100 py-12 w-screen relative left-1/2 -translate-x-1/2">
+      <div className="max-w-7xl mx-auto px-8 w-[96.5%]">
         <div className="grid grid-cols-12 gap-8">
           {/* Left Section */}
           <div className={`col-span-4 space-y-4 ${isRTL ? 'order-last' : 'order-first'}`}>
