@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef ,  useEffect } from "react";
 
-import { Shield, Menu } from 'lucide-react';
+
 import Abouten from "./abouten";
 import About from "./about";
 import Abouttr from "./abouttr";
@@ -17,13 +17,14 @@ import Calltr from "./calltr";
 import Mainar from "./mainar";
 import Mainardisktop from "./mainardisktop";
 import Mainendisktop from "./mainendisktop";
+import Maintrdisktop from "./maintrdisktop";
 import Mainen from "./maien";
 import Maintr from "./maintr";
 import "swiper/css";
 import './globals.css';
 
 import Cookies from "js-cookie";
-import ImageSlider from "./ImageSlider";
+
 
 import Footer from "./fotter";
 export default function Home() {
@@ -645,56 +646,7 @@ style={{
 }
 
 { 
-  TR &&   (<div className="grid grid-cols-2 gap-20 items-center">
-    {/* Image Section */}
-    <div className="relative">
-      <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-        <div className="relative w-full h-full">
-          <ImageSlider images={images} />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-        </div>
-      </div>
-    </div>
-   
-    {/* Content Section */}
-    <div className="space-y-10 -z-60 relative">
-      <div className="space-y-6">
-        <h1 className="text-6xl font-bold leading-tight bg-gradient-to-br from-gray-900 to-gray-700 bg-clip-text text-transparent">
-          Saç ekimi konusunda tereddüt mü yaşıyorsunuz?
-        </h1>
-        <h2 className="text-4xl font-bold text-gray-800">
-          Gelecekteki görünümünüzü sadece <span className="text-orange-500">60 saniyede</span> görün! ✨
-        </h2>
-        <p className="text-3xl text-gray-700">
-          Akıllı aracımızı{' '}
-          <span className="relative inline-block">
-            <span className="absolute inset-0 bg-orange-200 blur-lg opacity-30"></span>
-            <span className="relative text-orange-500 font-bold">ÜCRETSİZ</span>
-          </span>
-          <span className="inline-block mx-2 animate-bounce">💰</span> 
-          deneyin ve işleminizde <span className="font-bold">3.500$</span> tasarruf edin!
-        </p>
-      </div>
-   
-      {/* Button */}
-      <div className="relative">
-        <button className="w-full bg-gradient-to-r from-orange-500 to-orange-400 text-white text-2xl font-semibold py-6 px-8 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl shadow-lg overflow-hidden">
-          Hemen ücretsiz deneyin - Buraya tıklayın
-          <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 animate-shine"></div>
-        </button>
-      </div>
-   
-      {/* Security Badge */}
-      <div className="flex items-center gap-3 text-blue-600 bg-blue-50 p-4 rounded-xl">
-        <div className="p-2 bg-blue-100 rounded-lg">
-          <Shield className="w-6 h-6" />
-        </div>
-        <p className="text-lg font-medium">
-          Fotoğraflarınız %100 korumalı ve şifrelidir
-        </p>
-      </div>
-    </div>
-   </div>) 
+  TR &&   (<Maintrdisktop elementRef={elementRef}/>) 
 }
  
 

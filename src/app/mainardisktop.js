@@ -20,6 +20,15 @@ const mainarbic = ({ elementRef }) => {
     {
       firstImage: '/im2.jpg', // Example image before
       secondImage: '/b2.jpg', // Example image after
+    }, {
+      firstImage: '/im4.png', // Example image before
+      secondImage: '/b4.png', // Example image after
+      
+    },
+    {
+      firstImage: '/im5.png', // Example image before
+      secondImage: '/b5.png', // Example image after
+      
     },
     {
       firstImage: '/im1.jpg',
@@ -123,7 +132,7 @@ const mainarbic = ({ elementRef }) => {
    
     {/*  نتيجة بثلاث خطوات */}
     <div className="order-1 space-y-10 -z-60 relative text-right">
-    <div className=" min-h-[content] space-y-10  rounded-2xl overflow-hidden shadow-2xl">
+    <div className=" min-h-[content] space-y-10 ">
     <div 
       style={{
       
@@ -277,11 +286,14 @@ const mainarbic = ({ elementRef }) => {
    
  
       
+      <div className="order-1 relative">
+      <div className="aspect-[9/10] rounded-2xl overflow-hidden shadow-2xl">
         <div className="relative w-full h-full">
           <ImageSlider images={images} />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
-      
+      </div>
+    </div>
   
 
 
@@ -343,7 +355,7 @@ const mainarbic = ({ elementRef }) => {
      
     
       
-    <div className="min-h-[content] rounded-2xl space-y-10 shadow-2xl"
+    <div className="min-h-[content]  space-y-10  "
 
 >
 <svg className="w-full h-auto" width="393" height="300" viewBox="0 0 393 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -377,10 +389,15 @@ const mainarbic = ({ elementRef }) => {
 
 
  
+         
+<div className="order-1 relative">
+      <div className="aspect-[9/10] rounded-2xl overflow-hidden shadow-2xl">
         <div className="relative w-full h-full">
           <ImageSlider images={images} />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
+      </div>
+    </div>
        
 
 
@@ -421,7 +438,7 @@ const mainarbic = ({ elementRef }) => {
      
     
       
-    <div className="min-h-[content] rounded-2xl space-y-10 shadow-2xl">
+    <div className="min-h-[content] space-y-10 ">
 <div
       style={{
       
@@ -509,13 +526,15 @@ const mainarbic = ({ elementRef }) => {
 
 </div>
 
- 
     
+<div className="order-1 relative">
+      <div className="aspect-[9/10] rounded-2xl overflow-hidden shadow-2xl">
         <div className="relative w-full h-full">
           <ImageSlider images={images} />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
-      
+      </div>
+    </div>
     
 
 
@@ -554,7 +573,7 @@ const mainarbic = ({ elementRef }) => {
      
     
       
-    <div className="min-h-[content] rounded-2xl space-y-10 shadow-2xl">
+      <div className="min-h-[content] space-y-10 ">
 
 
   
@@ -644,10 +663,15 @@ marginLeft:"25%"
 
 </div>
 
-<div className="relative w-full h-full">
+   
+<div className="order-1 relative">
+      <div className="aspect-[9/10] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-full">
           <ImageSlider images={images} />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
+      </div>
+    </div>
       
    
 {/* Button */}
@@ -743,7 +767,7 @@ marginTop:"2%"
      
     
       
-    <div className="min-h-[content] rounded-2xl space-y-10 shadow-2xl">
+      <div className="min-h-[content] space-y-10 ">
 
 
 
@@ -804,11 +828,15 @@ marginTop:"2%",
 </div>
 
 
-<div className="relative w-full h-full">
+   
+<div className="order-1 relative">
+      <div className="aspect-[9/10] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-full">
           <ImageSlider images={images} />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
-   
+      </div>
+    </div>
      
 {/* Button */}
 <div className="w-[95%] align-middle mx-auto">
@@ -850,7 +878,7 @@ marginTop:"2%",
      
     
       
-    <div className="min-h-[content] rounded-2xl space-y-10 shadow-2xl">
+      <div className="min-h-[content] space-y-10 ">
 
   
       
@@ -1068,11 +1096,15 @@ marginTop:"2%",
 
     
 
-
-    <div className="relative w-full h-full">
+   
+    <div className="order-1 relative">
+      <div className="aspect-[9/10] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-full">
           <ImageSlider images={images} />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
+      </div>
+    </div>
 
 {/* Button */}
 <div className="w-[95%] align-middle mx-auto">
