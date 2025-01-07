@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef ,  useEffect } from "react";
 
-
+import { Shield, Menu } from 'lucide-react';
 import Abouten from "./abouten";
 import About from "./about";
 import Abouttr from "./abouttr";
@@ -31,7 +31,7 @@ export default function Home() {
   const elementRef = useRef<HTMLDivElement>(null);
   const [visibleSection, setVisibleSection] = useState<string>("main");
   const [scrollTarget, setScrollTarget] = useState<number>(0); // Scroll position
-
+console.log(Shield);
   // Scroll when visibleSection changes
   useEffect(() => {
     const scroll = () => {
@@ -126,18 +126,7 @@ export default function Home() {
       setlangclick(false);
     }
   };
-   
-  const images = [
-    {
-      firstImage: '/im2.jpg', // Example image before
-      secondImage: '/b2.jpg', // Example image after
-    },
-    {
-      firstImage: '/im1.jpg',
-      secondImage: '/b1.jpg',
-    },
-    // Add more image pairs here
-  ];
+ 
 
   const handleClick2: React.MouseEventHandler<SVGPathElement> = (): void => {
     setshowMinue((prevState) => !prevState);
