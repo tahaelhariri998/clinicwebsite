@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Brain, Users, Camera, ArrowLeft } from 'lucide-react';
+import { ArrowDown,   Users, Camera, ArrowLeft } from 'lucide-react';
 import ImageSlider from './ImageSlider';
  
 const HairClinicInterface = () => {
