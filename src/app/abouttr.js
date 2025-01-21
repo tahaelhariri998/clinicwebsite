@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutComponent = () => {
  return (
-   <div className="min-h-screen w-[96.5%] mx-auto">
+   <div className="min-h-screen w-[100%] mx-auto">
      <div>
        <title>Hakkımızda - Next Graft</title>
        <meta name="description" content="Next Graft'ın yenilikçi ve kişiye özel saç ekimi yaklaşımını öğrenin." />
@@ -11,8 +11,8 @@ const AboutComponent = () => {
      <main className="text-gray-800 font-sans leading-relaxed">
        {/* Orange Header Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute left-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute right-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <h1 className="text-4xl font-bold mb-4">Hakkımızda - Next Graft</h1>
            <p className="text-lg">Next Graft&apos;a hoş geldiniz, burada yenilik ve uzmanlık, doğal güzelliğinizi yeniden tanımlamak için buluşuyor.</p>
@@ -21,8 +21,8 @@ const AboutComponent = () => {
 
        {/* Main Content Section */}
        <section className="relative w-full bg-gray-100 py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
+         <div className="absolute left-[-100vw] top-0 bottom-0  bg-gray-100" />
+         <div className="absolute right-[-100vw] top-0 bottom-0  bg-gray-100" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8">
            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Özel Ortaklıklar</h2>
            <p className="text-lg mb-6">Türkiye ve BAE&apos;nin en iyi saç ekimi klinikleriyle stratejik ortaklıklar kurduk. Bu sayede, sektörün önde gelen saç ekimi uzmanlarına ve en son teknolojilerine doğrudan erişim sağlıyoruz. Bu ortaklıklar, gizlilik ve bireysel ilgiyi korurken en yüksek kalitede tıbbi hizmet almanızı garanti eder.</p>
@@ -40,8 +40,8 @@ const AboutComponent = () => {
 
        {/* Orange Footer Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute left-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute right-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <p className="text-lg">Next Graft&apos;ta, saç ekimi yolculuğunuzu daha sorunsuz ve başarılı hale getirmek için sizi bekliyoruz.</p>
          </div>

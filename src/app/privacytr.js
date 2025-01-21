@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrivacyPolicyComponent = () => {
   return (
-    <div className="min-h-screen w-[96.5%] mx-auto">
+    <div className="min-h-screen w-[100%] mx-auto">
       <div>
         <title>Gizlilik Politikası - Next Graft</title>
         <meta name="description" content="Next Graft'ın kişisel bilgilerin toplanması ve kullanımı ile ilgili gizlilik politikasını öğrenin." />
@@ -11,8 +11,8 @@ const PrivacyPolicyComponent = () => {
       <main className="text-gray-800 font-sans leading-relaxed">
         {/* Orange Header Section */}
         <section className="relative w-full bg-[#FF9500] text-white py-12">
-          <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-          <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+          <div className="absolute left-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
+          <div className="absolute right-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
           <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h1 className="text-4xl font-bold mb-4">Gizlilik Politikası</h1>
             <p className="text-lg">Next Graft gizlilik politikası sayfasına hoş geldiniz. Bu sayfada, kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklıyoruz.</p>
@@ -21,8 +21,8 @@ const PrivacyPolicyComponent = () => {
 
         {/* Main Content Section */}
         <section className="relative w-full bg-gray-100 py-12">
-          <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
-          <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
+          <div className="absolute left-[-100vw] top-0 bottom-0  bg-gray-100" />
+          <div className="absolute right-[-100vw] top-0 bottom-0  bg-gray-100" />
           <div className="relative max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Politika Kapsamı</h2>
             <p className="text-lg mb-6">Bu gizlilik politikası, Next Graft web sitesini kullanırken sizden elde ettiğimiz kişisel bilgileri nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.</p>
@@ -65,8 +65,8 @@ const PrivacyPolicyComponent = () => {
 
         {/* Orange Footer Section */}
         <section className="relative w-full bg-[#FF9500] text-white py-12">
-          <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-          <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+          <div className="absolute left-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
+          <div className="absolute right-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
           <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-lg">Next Graft&apos;a duyduğunuz güvenden dolayı teşekkür ederiz. Gizliliğinizi ve veri güvenliğinizi korumak için çok çalışıyoruz.</p>
           </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactUsComponent = () => {
  return (
-   <div className="min-h-screen w-[96.5%] mx-auto">
+   <div className="min-h-screen w-[100%] mx-auto">
      <div>
        <title>Bize Ulaşın - Next Graft</title>
        <meta name="description" content="Next Graft ile destek ve talepleriniz için WhatsApp ve e-posta üzerinden iletişime geçin." />
@@ -11,8 +11,8 @@ const ContactUsComponent = () => {
      <main className="text-gray-800 font-sans leading-relaxed">
        {/* Orange Header Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute  top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute   top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <h1 className="text-4xl font-bold mb-4">Bize Ulaşın</h1>
            <p className="text-lg">Next Graft olarak sizinle iletişimde olmaktan mutluluk duyarız. WhatsApp ve e-posta aracılığıyla 7/24 destek ve sorularınıza yanıt sağlıyoruz.</p>
@@ -21,8 +21,8 @@ const ContactUsComponent = () => {
 
        {/* Main Content Section */}
        <section className="relative w-full bg-gray-100 py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
+         <div className="absolute   top-0 bottom-0  bg-gray-100" />
+         <div className="absolute   top-0 bottom-0  bg-gray-100" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8">
            <h2 className="text-2xl font-semibold text-gray-900 mb-4">E-posta</h2>
            <p className="text-lg mb-6">
@@ -60,8 +60,8 @@ const ContactUsComponent = () => {
 
        {/* Orange Footer Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute  top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute   top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <p className="text-lg">Next Graft olarak, müşterilerimize en üst düzeyde destek ve özen sunmayı taahhüt ediyoruz. Size yardımcı olmak için buradayız ve sizden haber almayı sabırsızlıkla bekliyoruz.</p>
          </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutComponent = () => {
  return (
-   <div className="min-h-screen w-[96.5%] mx-auto">
+   <div className="min-h-screen w-[100%] mx-auto">
      <div>
        <title>About Us - Next Graft</title>
        <meta name="description" content="Learn about Next Graft's innovative and personalized approach to hair transplantation." />
@@ -11,8 +11,8 @@ const AboutComponent = () => {
      <main className="text-gray-800 font-sans leading-relaxed">
        {/* Orange Header Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute left-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute right-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <h1 className="text-4xl font-bold mb-4">من نحن - Next Graft</h1>
            <p className="text-lg">أهلاً بكم في Next Graft، حيث الابتكار والخبرة يتحدان لإعادة تعريف جمالكم الطبيعي.</p>
@@ -21,8 +21,8 @@ const AboutComponent = () => {
 
        {/* Main Content Section */}
        <section className="relative w-full bg-gray-100 py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
+         <div className="absolute left-[-100vw] top-0 bottom-0  bg-gray-100" />
+         <div className="absolute right-[-100vw] top-0 bottom-0  bg-gray-100" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-right">
            <h2 className="text-2xl font-semibold text-gray-900 mb-4">الشراكات الحصرية</h2>
            <p className="text-lg mb-6">لقد بنينا شبكة من الشراكات الاستراتيجية مع أفضل عيادات زراعة الشعر في تركيا والإمارات، مما يمنحكم الوصول المباشر إلى خبراء زراعة الشعر الرائدين وأحدث التقنيات في القطاع. هذه الشراكات تضمن لكم الحصول على الخدمات الطبية الأعلى جودة مع الحفاظ على الخصوصية والاهتمام الفردي.</p>
@@ -40,8 +40,8 @@ const AboutComponent = () => {
 
        {/* Orange Footer Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute left-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute right-[-100vw] top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <p className="text-lg">نتطلع إلى رعايتكم في Next Graft، حيث نجعل رحلتكم نحو زراعة الشعر أكثر سلاسة ونجاحًا.</p>
          </div>

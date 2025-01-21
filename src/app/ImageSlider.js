@@ -82,9 +82,9 @@ const ImageSlider = ({ images }) => {
     <div className="flex w-full h-full items-center justify-center relative">
       {/* Previous Button */}
       <button
-className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/95 p-3 rounded-full shadow-lg hover:bg-white transition-all group-hover:left-6 z-50"     
+className="absolute top-1/2 left-0 -translate-y-1/2 bg-white/95 p-2 rounded-full shadow-lg hover:bg-white transition-all group-hover:left-6 z-10"     
    onClick={handlePrevious}   >
-                        <ChevronLeft className="w-6 h-6" />
+                        <ChevronLeft className="w-4 h-4" />
 
       </button>
 
@@ -129,11 +129,11 @@ className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/95 p-3 rounded-full
 
       {/* Next Button */}
       <button
-       className="absolute top-1/2 right-4 -translate-y-1/2 bg-orange-400  p-3 rounded-full shadow-lg text-white hover:bg-orange-500 transition-all group-hover:right-6 z-50"
+       className="absolute top-1/2 right-0 -translate-y-1/2 bg-orange-400  p-2 rounded-full shadow-lg text-white hover:bg-orange-500 transition-all group-hover:right-6 z-10"
         onClick={handleNext}
         
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-4 h-4" />
        
       </button>
     </div>

@@ -393,3 +393,30 @@ body {
  .animate-fade-in {
   animation: fade-in 0.5s ease-out;
  }
+ @keyframes marquee-ltr {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-rtl {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.animate-marquee-ltr {
+  display: inline-block;
+  animation: marquee-ltr 20s linear infinite;
+}
+
+.animate-marquee-rtl {
+  display: inline-block;
+  animation: marquee-rtl 20s linear infinite;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactUsComponent = () => {
  return (
-   <div className="min-h-screen w-[96.5%] mx-auto">
+   <div className="min-h-screen w-[100%] mx-auto">
      <div>
        <title>Contact Us - Next Graft</title>
        <meta name="description" content="Get in touch with Next Graft for support and inquiries via WhatsApp and email." />
@@ -11,8 +11,8 @@ const ContactUsComponent = () => {
      <main className="text-gray-800 font-sans leading-relaxed">
        {/* Orange Header Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute   top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute   top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
            <p className="text-lg">
@@ -23,8 +23,8 @@ const ContactUsComponent = () => {
 
        {/* Main Content Section */}
        <section className="relative w-full bg-gray-100 py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-gray-100" />
+         <div className="absolute   top-0 bottom-0  bg-gray-100" />
+         <div className="absolute   top-0 bottom-0  bg-gray-100" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8">
            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Email</h2>
            <p className="text-lg mb-6">
@@ -64,8 +64,8 @@ const ContactUsComponent = () => {
 
        {/* Orange Footer Section */}
        <section className="relative w-full bg-[#FF9500] text-white py-12">
-         <div className="absolute left-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
-         <div className="absolute right-[-100vw] top-0 bottom-0 w-[100vw] bg-[#FF9500]" />
+         <div className="absolute top-0 bottom-0  bg-[#FF9500]" />
+         <div className="absolute  top-0 bottom-0  bg-[#FF9500]" />
          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
            <p className="text-lg">
              At Next Graft, we are committed to providing the highest levels of support and care to our clients. We are here to help and look forward to hearing from you.

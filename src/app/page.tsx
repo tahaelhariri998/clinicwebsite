@@ -62,9 +62,9 @@ console.log(Shield);
   };
 
 
-  const textar  = " وفر 3500$ شاهد نتائج شعرك بالذكاء الاصطناعى فى 60 ثانيه ";
-  const texten="Save $3,500  Preview Your Hair Transplant Results with AI in 60 Seconds!";
-  const texttr="30,000 TL Tasarruf Edin: Yapay Zeka ile 60 Saniyede Saç Ekim Sonuçlarınızı Görün!";
+  const textar  = " نشكر ثقة عيادات زراعة الشعر في تقنيتنا المتطورة لتحويل المترددين إلى عملاء 🏆";
+  const texten="We thank hair transplant clinics for trusting our advanced technology to turn hesitant individuals into clients. 🏆";
+  const texttr="Saç ekimi kliniklerine, tereddüt eden kişileri müşteriye dönüştüren ileri teknolojimize duydukları güven için teşekkür ederiz. 🏆";
 
   const [EN, setEN] = useState(false);
   const [TR, setTR] = useState(false);
@@ -359,19 +359,26 @@ console.log(Shield);
      </div>
 
 
-      {/* Enhanced Top Banner */}
-      <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-3 relative overflow-hidden">
-        <div className="absolute inset-0  opacity-10" />
-        <div className="max-w-7xl mx-auto px-8 flex items-center justify-center">
-          <span className="animate-pulse mr-2">✨</span>
-          <p className="text-xl font-medium">
-            {AR&&(textar)}
-            {EN&&(texten)}
-            {TR&&(texttr)}
-          </p>
-          <span className="animate-pulse ml-2">✨</span>
+    {/* Enhanced Top Banner */}
+    <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-3 relative overflow-hidden z-50">
+    <div className="absolute inset-0 opacity-10" />
+    <div className="max-w-7xl mx-auto px-8 flex items-center justify-center">
+        <span className="animate-pulse mr-2">✨</span>
+        <div className="overflow-hidden relative w-full">
+            <p
+                className={`text-xl font-medium whitespace-nowrap ${
+                    AR ? 'animate-marquee-rtl' : 'animate-marquee-ltr'
+                }`}
+            >
+                {AR && textar}
+                {EN && texten}
+                {TR && texttr}
+            </p>
         </div>
-      </div>
+        <span className="animate-pulse ml-2">✨</span>
+    </div>
+</div>
+
 
       {/* Enhanced Header */}
       <header className="bg-white/80 backdrop-blur-sm sticky top-0 z-40 border-b">
@@ -685,88 +692,27 @@ style={{
   
   <div className="relative w-full h-auto"
    >
-<svg  className="w-full h-auto"  width="393" height="32" viewBox="0 0 393 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="393" height="32" fill="#FF9500"/>
-{AR && (<text 
-          x="50%" 
-          y="50%" 
-          fill="white" 
-          fontSize="14" 
-          textAnchor="middle" 
-          dominantBaseline="middle" 
-          style={{
-            position: "absolute", 
-            width: "339px", 
-            height: "16px", 
-             
-            top: "8px", 
-            fontFamily: "'Almarai'", 
-            fontWeight: "400", 
-            fontSize: "14px", 
-            lineHeight: "16px", 
-            textAlign: "center", 
-            color: "#FFFFFF"
-          }}
-        >
-        {textar} ✨
-      </text> )}
 
-      {EN && (<text 
-          x="50%" 
-          y="50%" 
-          fill="white" 
-          fontSize="14" 
-          textAnchor="middle" 
-          dominantBaseline="middle" 
-          style={{
-            position: "absolute", 
-            width: "339px", 
-            height: "16px", 
-             
-            top: "8px", 
-            fontFamily: "'Almarai'", 
-            fontWeight: "400", 
-            fontSize: "11px", 
-            lineHeight: "16px", 
-            textAlign: "center", 
-            color: "#FFFFFF"
-          }}
-        >
-        {texten} ✨
-      </text> )}
+<div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-3 relative overflow-hidden  z-50">
+    <div className="absolute inset-0 opacity-10" />
+    <div className="max-w-7xl mx-auto px-8 flex items-center justify-center">
+        <span className="animate-pulse mr-2">✨</span>
+        <div className="overflow-hidden relative w-full">
+            <p
+                className={`text-xl font-medium whitespace-nowrap ${
+                    AR ? 'animate-marquee-rtl' : 'animate-marquee-ltr'
+                }`}
+            >
+                {AR && textar}
+                {EN && texten}
+                {TR && texttr}
+            </p>
+        </div>
+        <span className="animate-pulse ml-2">✨</span>
+    </div>
+</div>
 
-      {TR && (<text 
-          x="50%" 
-          y="50%" 
-          fill="white" 
-          fontSize="14" 
-          textAnchor="middle" 
-          dominantBaseline="middle" 
-          style={{
-            position: "absolute", 
-            width: "339px", 
-            height: "16px", 
-             
-            top: "8px", 
-            fontFamily: "'Almarai'", 
-            fontWeight: "400", 
-            fontSize: "10px", 
-            lineHeight: "16px", 
-            textAlign: "center", 
-            color: "#FFFFFF"
-          }}
-        >
-        {"30,000 TL Tasarruf Edin: Yapay Zeka ile 60 Saniyede Saç Ekim Sonuçlarınızı Görün!"} ✨
-      </text> )}
-
-<g clip-path="url(#clip0_1_655)">
-</g>
-<defs>
-<clipPath id="clip0_1_655">
-<rect width="16" height="16" fill="white" transform="translate(361 8)"/>
-</clipPath>
-</defs>
-</svg>
+ 
 
   </div>
 
@@ -1031,7 +977,7 @@ style={{
 
    
 
-      <main  className="mt-10 flex-grow  flex-col justify-center items-center w-full ml-[5%]">
+      <main  className="mt-10 flex-grow  flex-col justify-center items-center w-full ">
       <div className={visibleSection === 'call' ? 'block' : 'hidden'}
       style={{
  
@@ -1040,7 +986,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "rtl",
-        left:"-5%",
+        
         marginTop:"20%",
         
       }}
@@ -1061,7 +1007,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "ltr",
-        left:"-5%",
+      
         marginTop:"20%",
         
       }}
@@ -1086,7 +1032,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "rtl",
-        left:"-5%",
+      
         marginTop:"20%",
         
       }}
@@ -1109,7 +1055,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "ltr",
-        left:"-5%",
+ 
         marginTop:"20%",
         
       }}
@@ -1132,7 +1078,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "rtl",
-        left:"-5%",
+ 
         marginTop:"20%",
         
       }}
@@ -1151,7 +1097,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "ltr",
-        left:"-5%",
+ 
         marginTop:"20%",
         
       }}
@@ -1177,7 +1123,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "rtl",
-        left:"-5%",
+ 
         marginTop:"20%",
         
       }}
@@ -1197,7 +1143,7 @@ style={{
         width: "108%",
         height: "auto",
         direction: "ltr",
-        left:"-5%",
+ 
         marginTop:"20%",
         
       }}
@@ -1218,7 +1164,7 @@ style={{
 
 
   position: "relative",
-  width: "100%",
+   width: "108%",
   height: "auto",
  
   
@@ -1245,7 +1191,7 @@ style={{
  position: "relative",
  width: "100%",
  height: "auto",
-  left:"-5%"
+  
  
 }}
     > 
