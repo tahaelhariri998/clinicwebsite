@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Brain, Users, Camera, ArrowLeft } from 'lucide-react';
+import { ArrowDown,  Users, Camera, ArrowLeft } from 'lucide-react';
 import ImageSlider from './ImageSlider';
  
 const HairClinicInterface = () => {
@@ -78,7 +78,7 @@ const HairClinicInterface = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
           <div className="bg-orange-50 p-3 rounded-xl text-center">
-            <Brain className="w-8 h-8 mx-auto text-[#FF8A3D] mb-2" />
+          <h1 className="font-bold mb-1 text-3xl"> ✨</h1>
             <h3 className="font-bold mb-1 text-sm">Gelişmiş AI Teknolojileri</h3>
             <p className="text-gray-600 text-xs">İşlem analizi ve planlaması için en son teknolojiler</p>
           </div>
