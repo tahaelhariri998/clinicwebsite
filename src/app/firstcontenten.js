@@ -38,13 +38,10 @@ const HairClinicInterface = () => {
                   <span className="relative text-[#FF8A3D]">
                     Because They&apos;re Afraid of the Result?
                   </span>
-                  <div className="mt-1">
-                    <span className="inline-block text-3xl animate-smooth-float">🤔</span>
-                  </div>
+                 
                 </div>
               </h1>
               
-              <div className="w-16 h-0.5 mx-auto bg-gradient-to-r from-transparent via-orange-400 to-transparent rounded-full animate-width-pulse"></div>
             </div>
           </div>
         </div>
@@ -75,7 +72,7 @@ const HairClinicInterface = () => {
           </div>
         </div>
 
-        <div className="relative bg-white w-2/3 h-110 mx-auto rounded-2xl overflow-hidden shadow-lg top-[-1rem]">
+        <div className="relative bg-white w-5/6 h-110 mx-auto rounded-2xl overflow-hidden shadow-lg top-[-1rem]">
           <ImageSlider images={images} />
         </div>
 

@@ -47,14 +47,11 @@ const HairClinicInterface = () => {
           <span className="relative text-[#FF8A3D]">
             بسبب انه خايف من النتيجة ؟
           </span>
-          <div className="mt-1">
-            <span className="inline-block text-3xl animate-smooth-float">🤔</span>
-          </div>
+        
         </div>
       </h1>
       
       {/* Decorative line with gradient */}
-      <div className="w-16 h-0.5 mx-auto bg-gradient-to-r from-transparent via-orange-400 to-transparent rounded-full animate-width-pulse"></div>
     </div>
   </div>
 </div>
@@ -93,7 +90,7 @@ const HairClinicInterface = () => {
           </div>
 
           {/* Image Slider Section */}
-          <div className="relative bg-white  w-2/3 h-110 mx-auto rounded-2xl overflow-hidden shadow-lg top-[-1rem]">
+          <div className="relative bg-white  w-5/6 h-110 mx-auto rounded-2xl overflow-hidden shadow-lg top-[-1rem]">
             <ImageSlider images={images} />
              
           </div>
