@@ -36,7 +36,7 @@ const HairClinicInterface = () => {
                 <div className="relative inline-flex flex-col items-center">
                   <span className="absolute inset-0 bg-orange-100 rounded-lg blur-md animate-subtle-pulse"></span>
                   <span className="relative text-[#FF8A3D]">
-                    Because They're Afraid of the Result?
+                    Because They&apos;re Afraid of the Result?
                   </span>
                   <div className="mt-1">
                     <span className="inline-block text-3xl animate-smooth-float">🤔</span>
@@ -62,7 +62,7 @@ const HairClinicInterface = () => {
                 ></div>
                 
                 <span className="relative text-white font-bold text-lg">
-                  Here's the Solution!
+                  Here&apos;s the Solution!
                 </span>
 
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-4 h-2 bg-gradient-to-b from-amber-500 to-transparent opacity-50"></div>
