@@ -1,9 +1,26 @@
 import React, { useState } from 'react';
-import { BarChart, Clock, Users, Lightbulb, TrendingUp } from 'lucide-react';
-
+import { BarChart, Clock,ArrowDown, Users, Lightbulb, TrendingUp } from 'lucide-react';
+import ImageSlider from './ImageSlider';
 const StatsVisualization = () => {
   const [activeSection, setActiveSection] = useState(0);
 console.log(activeSection);
+const images = [
+  {
+    firstImage: '/im2.jpg',
+    secondImage: '/b2.jpg',
+  }, {
+    firstImage: '/im4.png',
+    secondImage: '/b4.png',
+  },
+  {
+    firstImage: '/im5.png',
+    secondImage: '/b5.png',
+  },
+  {
+    firstImage: '/im1.jpg',
+    secondImage: '/b1.jpg',
+  },
+];
   const stats = [
     {
       source: "معهد ستانفورد للطب التجميلي",
@@ -14,8 +31,9 @@ console.log(activeSection);
       color: "from-orange-400 to-orange-600"
     },
     {
-      source: "Harvard Medical Review",
+      source: "مجلة هارفارد الطبية",
       mainStat: "78%",
+      year: "دراسة",
       description: "زيادة في نسبة تحويل العملاء المترددين",
       Icon: TrendingUp,
       color: "from-amber-400 to-orange-500"
@@ -44,7 +62,7 @@ console.log(activeSection);
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-12 px-4">
       {/* Header Animation */}
  {/* Header Animation */}
-<div className="max-w-4xl mx-auto mb-16 text-center relative">
+<div className="max-w-4xl mx-auto mb-4 text-center relative">
   <div className="absolute inset-0 bg-gradient-to-r from-orange-300/20 via-amber-300/20 to-orange-300/20 blur-3xl -z-10"></div>
   <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-amber-500 text-transparent bg-clip-text leading-relaxed py-2">
     تحول مستقبل جراحات التجميل 🚀
@@ -53,6 +71,14 @@ console.log(activeSection);
     اكتشف كيف يمكن للتكنولوجيا أن تغير قرارات عملائك
   </p>
 </div>
+<div className="flex justify-center animate-bounce">
+            <ArrowDown className="w-16 h-16 text-[#FF8A3D]" />
+          </div>
+<div className="relative bg-white mb-4 w-3/4 h-110 mx-auto rounded-2xl overflow-hidden shadow-lg">
+            <ImageSlider images={images} />
+             
+          </div>
+
       {/* Interactive Stats Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         {stats.map((stat, index) => (
@@ -99,12 +125,19 @@ console.log(activeSection);
           </p>
         </div>
 
-        {/* Call to Action */}
-        <button className="bg-gradient-to-r from-orange-400 to-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg
-          hover:from-orange-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-orange-300/50
-          transform hover:scale-105">
-          اكتشف المستقبل الآن
-        </button>
+    {/* Call to Action */}
+<button className="relative bg-gradient-to-r from-orange-400 to-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg
+  hover:from-orange-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-orange-300/50
+  transform hover:scale-105 overflow-hidden group">
+  {/* Glowing background */}
+  <span className="absolute inset-0 bg-orange-500 blur-lg opacity-0 rounded-xl transition-opacity duration-500 group-hover:opacity-80 animate-pulse"></span>
+  
+  {/* Button text */}
+  <span className="relative z-10">
+    اكتشف المستقبل الآن
+  </span>
+</button>
+
       </div>
 
       {/* Features Grid */}

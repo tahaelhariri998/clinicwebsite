@@ -52,7 +52,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-orange-50 py-16 px-4">
+    <div className=" bg-gradient-to-br from-gray-50 to-orange-50 py-16 px-4">
       <div className="max-w-3xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">

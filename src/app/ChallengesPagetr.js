@@ -34,7 +34,7 @@ const ChallengesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8 sm:py-12 px-4">
+    <div className="  bg-gradient-to-b from-gray-50 to-white py-8 sm:py-12 px-4">
       {/* Header Section */}
       <div className="max-w-4xl mx-auto mb-8 sm:mb-12 text-center relative px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-orange-200/20 via-orange-300/20 to-orange-200/20 blur-3xl -z-10 rounded-full"></div>
@@ -82,11 +82,13 @@ const ChallengesPage = () => {
           <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 max-w-2xl mx-auto">
             Kliniğinizin daha fazla potansiyel hasta kaybetmesine izin vermeyin. Zorlukları başarı fırsatlarına dönüştürmenize yardımcı olmak için buradayız.
           </p>
-          <button className="bg-orange-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium
-            hover:bg-orange-600 transition-colors duration-300 shadow-lg
-            hover:shadow-orange-300/50 text-sm sm:text-base">
-            Şimdi İletişime Geçin
-          </button>
+          <button className="relative bg-orange-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium
+    hover:bg-orange-600 transition-colors duration-300 shadow-lg
+    text-sm sm:text-base overflow-hidden group">
+  <span className="absolute inset-0 bg-orange-400 blur-lg opacity-0 rounded-lg transition-opacity duration-500 group-hover:opacity-100 animate-pulse"></span>
+  <span className="relative z-10">   Şimdi İletişime Geçin</span>
+</button>
+          
         </div>
       </div>
     </div>

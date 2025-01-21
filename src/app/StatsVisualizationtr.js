@@ -1,9 +1,26 @@
 import React, { useState } from 'react';
-import { BarChart, Clock, Users, Lightbulb, TrendingUp } from 'lucide-react';
-
+import { BarChart, Clock, Users,ArrowDown, Lightbulb, TrendingUp } from 'lucide-react';
+import ImageSlider from './ImageSlider';
 const StatsVisualization = () => {
   const [activeSection, setActiveSection] = useState(0);
   console.log(activeSection);
+  const images = [
+    {
+      firstImage: '/im2.jpg',
+      secondImage: '/b2.jpg',
+    }, {
+      firstImage: '/im4.png',
+      secondImage: '/b4.png',
+    },
+    {
+      firstImage: '/im5.png',
+      secondImage: '/b5.png',
+    },
+    {
+      firstImage: '/im1.jpg',
+      secondImage: '/b1.jpg',
+    },
+  ];
   const stats = [
     {
       source: "Stanford Estetik Tıp Enstitüsü",
@@ -16,6 +33,7 @@ const StatsVisualization = () => {
     {
       source: "Harvard Tıp Dergisi",
       mainStat: "78%",
+      year: "bilimsel çalışma",
       description: "kararsız hastaların dönüşüm oranında artış",
       Icon: TrendingUp,
       color: "from-amber-400 to-orange-500"
@@ -43,7 +61,7 @@ const StatsVisualization = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-12 px-4">
       {/* Header Animation */}
-      <div className="max-w-4xl mx-auto mb-16 text-center relative">
+      <div className="max-w-4xl mx-auto mb-4 text-center relative">
         <div className="absolute inset-0 bg-gradient-to-r from-orange-300/20 via-amber-300/20 to-orange-300/20 blur-3xl -z-10"></div>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-amber-500 text-transparent bg-clip-text leading-relaxed py-2">
           Kliniğinizi Dönüştürün 🚀
@@ -52,7 +70,13 @@ const StatsVisualization = () => {
           Teknolojinin hasta kararlarınızı nasıl değiştirebileceğini keşfedin
         </p>
       </div>
-
+      <div className="flex justify-center animate-bounce">
+            <ArrowDown className="w-16 h-16 text-[#FF8A3D]" />
+          </div>
+<div className="relative bg-white mb-4 w-3/4 h-110 mx-auto rounded-2xl overflow-hidden shadow-lg">
+            <ImageSlider images={images} />
+             
+          </div>
       {/* Interactive Stats Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         {stats.map((stat, index) => (
