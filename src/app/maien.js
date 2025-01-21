@@ -87,7 +87,7 @@ const mainen = ({ elementRef }) => {
        {/* Görsel Bölümü */}
        <div className="order-0 md:order-1 mx-auto w-full max-w-sm md:max-w-none mt-16 ml-4">
        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight text-gray-900">
-            How many clients is your clinic losing due to "fear of results"? 🤔
+            How many clients is your clinic losing due to &quot;fear of results&quot;? 🤔
           </h1>
           
 

@@ -114,7 +114,7 @@ const EnhancedCallToAction = () => {
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-orange-100 mb-24
           transform transition-all duration-500 hover:shadow-orange-200/50">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 relative">
-            It's Simple:
+            It&apos;s Simple:
             <div className="absolute -top-4 -left-4 w-8 h-8 bg-orange-100 rounded-full animate-ping"></div>
           </h2>
           <div className="space-y-6">

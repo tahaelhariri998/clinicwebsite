@@ -3,7 +3,7 @@ import { BarChart, Clock, Users, Lightbulb, TrendingUp } from 'lucide-react';
 
 const StatsVisualization = () => {
   const [activeSection, setActiveSection] = useState(0);
-
+  console.log(activeSection);
   const stats = [
     {
       source: "Stanford Estetik Tıp Enstitüsü",

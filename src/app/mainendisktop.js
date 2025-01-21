@@ -51,7 +51,7 @@ const mainarbic = ({ elementRef }) => {
         {/* Main Heading */}
         <div className="space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900">
-            How many clients is your clinic losing because of "Fear of the result"? 🤔
+            How many clients is your clinic losing because of &quot;Fear of the result&quot;? 🤔
           </h1>
           
           <div className="text-xl md:text-2xl text-gray-700 space-y-4">

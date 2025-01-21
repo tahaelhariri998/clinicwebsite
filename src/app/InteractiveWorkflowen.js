@@ -66,7 +66,7 @@ const InteractiveWorkflow = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-orange-600 to-amber-600 text-transparent bg-clip-text leading-tight">
             60 Seconds
             <br />
-            Transform Your Clients' Future
+            Transform Your Clients&apos; Future
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             Discover how to turn hesitant prospects into confident clients in just one minute

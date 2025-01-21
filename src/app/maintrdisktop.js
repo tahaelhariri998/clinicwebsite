@@ -49,7 +49,7 @@ const mainarbic = ({ elementRef }) => {
         {/* Ana Başlık */}
         <div className="space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900">
-            "Sonuçtan Korkuyor" diye kliniğiniz kaç müşteri kaybediyor? 🤔
+          &quot;Sonuçtan Korkuyor&quot; diye kliniğiniz kaç müşteri kaybediyor? 🤔
           </h1>
           
           <div className="text-xl md:text-2xl text-gray-700 space-y-4">

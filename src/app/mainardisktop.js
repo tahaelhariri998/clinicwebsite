@@ -49,7 +49,7 @@ const mainarbic = ({ elementRef }) => {
             {/* Main Heading */}
             <div className="space-y-6">
               <h1 dir="rtl" className="text-3xl md:text-5xl font-bold leading-tight text-gray-900">
-                كم عميل تخسر عيادتك بسبب "خايف من النتيجة"؟ 🤔
+                كم عميل تخسر عيادتك بسبب &quot;خايف من النتيجة&quot;؟ 🤔
               </h1>
               
               <div dir="rtl" className="text-xl md:text-2xl text-gray-700 space-y-4">

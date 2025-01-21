@@ -80,7 +80,7 @@ const ChallengesPage = () => {
             Time for Change! 🚀
           </h2>
           <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 max-w-2xl mx-auto">
-            Don't let your clinic lose more potential clients. We're here to help you transform challenges into opportunities for success.
+            Don&apos;t let your clinic lose more potential clients. We&apos;re here to help you transform challenges into opportunities for success.
           </p>
           <button className="bg-orange-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium
             hover:bg-orange-600 transition-colors duration-300 shadow-lg
